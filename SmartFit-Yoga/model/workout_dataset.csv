@@ -1,0 +1,532 @@
+﻿type,workout_title,duration,intensity,description
+Cardio,Quick Cardio Burn,10,3,A fast-paced cardio workout to get your heart pumping and burn calories.
+Strength,Upper Body Strength,12,2,Focus on arms and shoulders with exercises that build upper body strength.
+HIIT,Full Body HIIT Blast,15,3,High-intensity interval training targeting the entire body for maximum calorie burn.
+Flexibility,Quick Stretch & Flex,7,1,A series of stretches to improve flexibility and mobility.
+Core,5-Minute Abs Burn,5,3,"A short, intense workout targeting your core muscles."
+Strength,Lower Body Burn,10,2,Lower body exercises to tone legs and glutes.
+Cardio,High-Intensity Cardio,20,3,A challenging cardio routine to increase heart rate and burn fat.
+Core,Core Crunches,6,2,Focus on strengthening your abs and lower back muscles.
+Flexibility,Deep Stretch & Relax,8,1,A relaxing stretch routine for flexibility and recovery.
+Strength,Arm Toning Workout,12,2,Focus on exercises that tone and strengthen arms.
+HIIT,Quick HIIT Circuit,10,3,Fast-paced interval training for a quick calorie burn.
+Cardio,Sprint Intervals,15,3,Sprint intervals followed by short rest periods for fat burning.
+Strength,Leg Day Burn,20,3,"Lower body workout targeting quads, hamstrings, and glutes."
+Flexibility,Full Body Stretch Routine,10,1,A full-body stretch for improving flexibility and range of motion.
+Core,Oblique Burn,7,2,Targeting the oblique muscles for a toned waistline.
+Strength,Chest & Triceps Strength,12,2,Focus on strengthening chest and triceps with bodyweight exercises.
+HIIT,Tabata HIIT,15,3,A high-intensity Tabata routine for maximum calorie burn.
+Cardio,Jump Rope Challenge,10,3,A fast-paced jump rope workout for full-body conditioning.
+Strength,Glutes & Hamstrings,15,2,A workout to strengthen and tone the glutes and hamstrings.
+Flexibility,Yoga Flex & Flow,12,1,A gentle yoga routine to improve flexibility and reduce stress.
+Core,Plank & Crunches,8,3,A combination of planks and crunches to target your core.
+Strength,Back Strength Routine,12,2,Exercises focused on strengthening the back and improving posture.
+HIIT,High-Energy Interval,20,3,A mix of high-energy exercises to boost stamina and burn fat.
+Cardio,Steady-State Cardio,30,2,"A steady, moderate-intensity cardio routine for endurance."
+Flexibility,Lower Body Stretch,8,1,Stretching routine focused on legs and hips.
+Core,Mountain Climbers,5,3,Intense core workout targeting abs and hip flexors.
+Strength,Squat & Deadlift Routine,15,3,A routine focused on squats and deadlifts for leg and core strength.
+HIIT,Fat Burner HIIT,15,3,High-intensity workout for fat burning and endurance.
+Cardio,Cycling Intervals,20,2,A mix of cycling intervals for improved cardiovascular fitness.
+Strength,Bodyweight Strength Circuit,10,2,Full-body bodyweight exercises for strength and toning.
+Flexibility,Morning Stretch Routine,7,1,A gentle stretch routine to start your day.
+Core,Russian Twists,6,2,Focus on obliques and rotational movement for a strong core.
+Strength,Shoulder Press Routine,12,2,Targeting shoulders with press exercises.
+HIIT,30-Minute HIIT Workout,30,3,A full 30-minute HIIT workout for maximum calorie burn.
+Cardio,Fast Walking Routine,20,2,Fast-paced walking to improve cardiovascular health.
+Strength,Total Body Strength,15,2,A full-body strength workout focusing on all major muscle groups.
+Flexibility,Hip Flexor Stretch,8,1,Focus on stretching the hip flexors for improved mobility.
+Core,Leg Raises,5,3,Focus on strengthening the lower abs with leg raises.
+Strength,Bicep & Back Routine,12,2,Strengthening biceps and back muscles.
+HIIT,Cardio Power Circuit,20,3,A high-intensity cardio workout designed to burn calories fast.
+Cardio,Walking Lunges,15,2,A low-impact cardio exercise to tone legs and improve endurance.
+Strength,Full Body Strength Circuit,20,3,Full-body workout targeting all muscle groups.
+Flexibility,Spinal Twist & Stretch,8,1,A gentle routine to stretch the spine and improve flexibility.
+Core,Side Planks & Crunches,7,3,Combination of side planks and crunches for a stronger core.
+Strength,Triceps & Abs Workout,10,2,A circuit that targets triceps and core muscles.
+HIIT,High-Knee Intervals,15,3,High-intensity intervals focusing on cardiovascular endurance.
+Cardio,Zumba Dance Workout,25,2,Fun and energetic dance workout to burn calories.
+Strength,Leg & Glutes Strength,15,2,Lower body workout focusing on legs and glutes.
+Flexibility,Shoulder & Arm Stretch,7,1,Stretching routine for shoulders and arms.
+Core,Bicycle Crunches,6,2,A core exercise to strengthen the abs and obliques.
+Strength,Squat & Lunge Circuit,15,2,Focus on squats and lunges to strengthen legs and glutes.
+HIIT,Extreme HIIT Workout,25,3,A challenging high-intensity workout designed to burn fat quickly.
+Cardio,Dance Cardio Blast,20,2,A fun cardio workout set to music for full-body conditioning.
+Strength,Chest Press & Push-ups,15,2,Targeting chest muscles with press and push-up exercises.
+Flexibility,Back & Spine Stretch,8,1,Stretching the back and spine to improve flexibility.
+Core,Crunch & Bridge Routine,10,3,Intense core routine focusing on crunches and glute bridges.
+Strength,Deadlift & Squat Challenge,20,3,A challenge combining deadlifts and squats for strength.
+HIIT,Sprint & Jump HIIT,20,3,High-intensity interval workout combining sprints and jumps.
+Cardio,Step-Up Intervals,15,2,Step-ups on a bench for a low-impact cardio workout.
+Strength,Core & Glutes Workout,15,2,Focus on strengthening core and glutes with various exercises.
+Flexibility,Full Body Yoga Stretch,10,1,A yoga-inspired stretch routine for the entire body.
+Core,Sit-Up & Leg Raises,7,3,A quick and effective core workout targeting abs and lower body.
+Strength,Arm & Shoulder Circuit,12,2,Strengthen arms and shoulders with targeted exercises.
+HIIT,Fat Burn HIIT Circuit,15,3,A fat-burning HIIT workout for full-body conditioning.
+Cardio,Power Walking,20,2,Fast-paced walking workout to increase endurance.
+Strength,Full Body Power Strength,20,3,Power strength exercises targeting full body muscle groups.
+Flexibility,Leg Stretch Routine,8,1,Focus on stretching the legs to improve flexibility.
+Core,Leg Lifts & Crunches,5,3,Targeting the abs with leg lifts and crunches.
+Strength,Dumbbell Circuit,15,2,A dumbbell-focused circuit for strength and toning.
+HIIT,Plyometric Power,15,3,Plyometric exercises to build strength and burn fat.
+Cardio,Quick Cardio Burst,10,3,"A fast, intense cardio burst to kickstart your metabolism."
+Strength,Push-up & Squat Routine,15,2,Combine push-ups and squats to build upper and lower body strength.
+HIIT,Intense HIIT Circuit,20,3,An intense circuit of high-energy intervals to burn calories fast.
+Flexibility,Yoga Flexibility Flow,12,1,A yoga flow to improve flexibility and reduce tension.
+Core,Leg Raise & Plank Combo,8,3,A combination of leg raises and planks for core strength.
+Strength,Full Body Burn,20,3,A full-body workout for strength and muscle endurance.
+Cardio,High-Intensity Sprints,15,3,Sprint intervals to push your limits and burn fat.
+Strength,Upper Body Circuit,12,2,"Strengthen your arms, shoulders, and chest with this circuit."
+HIIT,Jumping Jack Challenge,10,3,"A fun, high-intensity workout with jumping jacks."
+Flexibility,Dynamic Stretch Routine,8,1,A dynamic warm-up stretch to increase mobility.
+Core,Bicycle Crunch Challenge,7,3,Target your abs with bicycle crunches for a tight core.
+Strength,Glute Bridge Burn,12,2,A workout focusing on glutes and lower back strength.
+HIIT,Crossfit HIIT,20,3,A Crossfit-inspired workout to challenge your strength and endurance.
+Cardio,Stair Climb Workout,15,2,Climbing stairs for cardio and leg toning.
+Strength,Back & Biceps Strength,12,2,Focus on strengthening back and biceps for better posture.
+Flexibility,Deep Stretch & Release,7,1,A deep stretch to improve flexibility and reduce tension.
+Core,Core Stability Routine,10,2,Strengthen your core muscles with stability exercises.
+Strength,Dumbbell Strength Routine,15,3,Use dumbbells for a full-body strength workout.
+HIIT,Tabata Cardio Challenge,15,3,A high-intensity Tabata workout with short bursts of activity.
+Cardio,Running Intervals,20,3,Interval running to improve cardiovascular fitness.
+Strength,Full Body Dumbbell Circuit,15,2,Dumbbell circuit workout targeting all major muscle groups.
+Flexibility,Shoulder & Neck Stretch,8,1,A stretch to release tension in the shoulders and neck.
+Core,Side Plank & Crunch,8,3,Combination of side planks and crunches for core strengthening.
+Strength,Leg Day Strength,20,3,Focus on strengthening your legs and glutes.
+HIIT,HIIT Plyometric Circuit,15,3,A plyometric-focused HIIT workout to boost power and endurance.
+Cardio,Bike Interval Training,20,2,Interval cycling workout for full-body conditioning.
+Strength,Chest & Core Burn,12,2,Burn fat and build muscle with chest and core exercises.
+Flexibility,Full Body Stretch,10,1,A full-body stretch routine to increase flexibility.
+Core,Russian Twist Challenge,7,3,Challenge your core with Russian twists and rotations.
+Strength,Shoulder Press & Lateral Raise,12,2,Strengthen shoulders with press and lateral raises.
+HIIT,Sprint Intervals Challenge,15,3,Sprint intervals with brief rest periods to maximize fat burn.
+Cardio,Quick HIIT Blast,10,3,"A quick, explosive HIIT workout to burn calories fast."
+Strength,Triceps & Chest Burn,12,2,A workout focused on building your triceps and chest muscles.
+Flexibility,Hamstring Stretch,8,1,A stretch routine to increase hamstring flexibility.
+Core,Plank to Push-up,10,3,A combination of planks and push-ups for core strength.
+Strength,Glute & Core Strength,15,2,Focus on glutes and core muscles to improve overall strength.
+HIIT,High-Energy Burpees,12,3,A high-intensity burpee workout to maximize calorie burn.
+Cardio,Low Impact Cardio,20,2,Low-impact cardio for improved fitness and fat loss.
+Strength,Full Body Strength Circuit,20,3,A challenging full-body workout targeting all muscle groups.
+Flexibility,Spinal & Hip Flexor Stretch,10,1,Stretch for better mobility in the spine and hips.
+Core,Abs & Lower Back Routine,8,3,Strengthen abs and lower back for better posture and stability.
+Strength,Squat & Leg Strength,15,2,A lower-body workout to build strength in your legs.
+HIIT,20-Minute Tabata Workout,20,3,A full 20-minute Tabata workout to burn fat and build strength.
+Cardio,Interval Running Routine,15,3,Run intervals to improve cardiovascular endurance.
+Strength,Deadlift Strength Circuit,15,3,Focus on deadlifts to build strength in your lower body.
+Flexibility,Deep Lower Back Stretch,8,1,Stretch routine to release tension in the lower back.
+Core,Leg Raise & Oblique Twist,10,3,Strengthen your core with leg raises and oblique twists.
+Strength,Full Body Power Routine,20,3,A powerful full-body routine to build strength and endurance.
+HIIT,HIIT Bodyweight Blast,15,3,A bodyweight-focused HIIT workout to challenge your endurance.
+Cardio,Fast Walking Intervals,20,2,Interval walking workout for low-impact cardio.
+Strength,Glute & Thigh Workout,15,2,Strengthen glutes and thighs with various exercises.
+Flexibility,Yoga Stretch & Flexibility,12,1,A gentle yoga stretch routine for flexibility and recovery.
+Core,Side Plank & Twist,10,3,Strengthen your core with side planks and twists.
+Strength,Arm & Shoulder Burn,12,2,A focused workout for building arm and shoulder muscles.
+HIIT,Cardio & Strength HIIT,20,3,High-intensity cardio combined with strength exercises.
+Cardio,Power Walking Challenge,20,2,A challenging power walk to build endurance and burn calories.
+Strength,Dumbbell Strength Circuit,20,2,Dumbbell-focused circuit for toning and strengthening muscles.
+Flexibility,Full Body Yoga Flow,10,1,A calming yoga flow to increase flexibility and reduce stress.
+Core,Bicycle & Leg Raise Combo,10,3,A combination of bicycle crunches and leg raises for core strength.
+Strength,Upper Body Strength Blast,15,3,A blast workout for upper body strength and muscle toning.
+HIIT,Advanced HIIT Workout,20,3,A high-intensity workout for advanced fitness levels.
+Cardio,Cardio Kickboxing,15,3,A cardio kickboxing workout to burn fat and improve strength.
+Strength,Back & Biceps Strength,12,2,A workout focused on building back and bicep muscles.
+Flexibility,Stretch & Flex Routine,8,1,A gentle stretch and flexibility routine to improve range of motion.
+Core,Plank & Leg Raise Combo,8,3,A combination of planks and leg raises to strengthen your core.
+Strength,Leg Toning Circuit,15,2,A circuit workout focusing on toning and strengthening the legs.
+HIIT,Fat-Burning HIIT Routine,15,3,A high-intensity workout to burn fat and boost metabolism.
+Cardio,Fast Walking & Jogging,25,2,A combination of walking and jogging intervals to improve endurance.
+Strength,Glute & Hamstring Workout,20,2,Focus on building strength in your glutes and hamstrings.
+Cardio,Full Body Cardio Burn,15,3,A full-body cardio workout to increase heart rate and burn fat.
+Strength,Upper Body Power,15,2,Power up your upper body with exercises targeting arms and shoulders.
+HIIT,Jump Rope Intervals,12,3,A high-intensity interval workout using a jump rope to burn calories.
+Flexibility,Shoulder Stretch Routine,8,1,A series of stretches to improve shoulder mobility.
+Core,Abdominal Burn,7,3,"A short, intense workout focused on burning abdominal fat."
+Strength,Leg Press & Squat Routine,20,3,A combination of leg presses and squats for leg strength.
+Cardio,Running Intervals Challenge,20,3,Sprint and jog intervals to challenge your endurance and burn fat.
+Strength,Total Body Dumbbell Burn,15,2,Full-body workout with dumbbells to build strength and tone.
+HIIT,Quick Bodyweight HIIT,12,3,"A short, intense bodyweight HIIT workout to burn fat."
+Flexibility,Yoga Stretch for Flexibility,10,1,A yoga-inspired stretch routine to increase flexibility and mobility.
+Core,Russian Twists & Crunches,10,3,A dynamic routine to target your core and obliques.
+Strength,Glute & Thigh Workout,15,2,Focus on glutes and thighs for strength and toning.
+HIIT,High-Intensity Interval Challenge,20,3,A high-energy interval workout to challenge your stamina.
+Cardio,Power Walking Routine,25,2,A power walk workout to increase endurance and burn fat.
+Strength,Shoulder & Triceps Burn,15,2,Focus on shoulders and triceps to strengthen and tone.
+Flexibility,Full Body Stretching Routine,12,1,A full-body stretch to enhance flexibility and reduce tension.
+Core,Side Planks & Crunches,8,3,A combination of side planks and crunches for core stability.
+Strength,Dumbbell Upper Body Workout,12,2,A dumbbell workout to strengthen your upper body muscles.
+HIIT,Cardio Power Blast,15,3,High-intensity workout with intervals to burn calories fast.
+Cardio,Sprint & Jog Intervals,20,3,A mix of sprints and jogging to boost cardiovascular fitness.
+Strength,Full Body Strength Circuit,20,3,Full-body workout circuit to improve strength and endurance.
+Flexibility,Hamstring Stretch Routine,10,1,Stretch to increase flexibility in your hamstrings.
+Core,Bicycle Crunch Circuit,7,3,A quick core circuit with bicycle crunches and leg raises.
+Strength,Back & Shoulder Routine,15,2,Strengthen your back and shoulders with this effective workout.
+HIIT,HIIT for Fat Loss,20,3,A HIIT workout designed to maximize fat burning.
+Cardio,Jumping Jacks & Sprints,15,3,A mix of jumping jacks and sprints to burn fat and improve endurance.
+Strength,Glutes & Legs Strengthening,20,2,A workout focused on building strength in your glutes and legs.
+Flexibility,Dynamic Lower Body Stretch,8,1,A dynamic stretch routine to increase flexibility in legs and hips.
+Core,Leg Raise & Oblique Crunch,10,3,Target your abs with leg raises and oblique crunches.
+Strength,Chest & Back Strength,15,2,Strengthen your chest and back with this routine.
+HIIT,Tabata Fat Burning Circuit,15,3,A Tabata-style workout to burn fat and improve stamina.
+Cardio,Cycling Intervals Challenge,20,2,A cycling workout using intervals to build endurance and stamina.
+Strength,Arm & Shoulder Strength,12,2,Focus on strengthening your arms and shoulders with dumbbells.
+Flexibility,Full Body Yoga Flow,10,1,A gentle yoga routine to enhance flexibility and mobility.
+Core,Mountain Climbers & Planks,8,3,Combine mountain climbers and planks for an intense core workout.
+Strength,Leg & Glute Strengthening,15,2,Focus on legs and glutes to build lower body strength.
+HIIT,HIIT for Beginners,15,2,A beginner-friendly HIIT workout to build stamina.
+Cardio,Steady-State Running,20,2,A steady running workout to improve cardiovascular fitness.
+Strength,Full Body Dumbbell Strength,15,3,A full-body workout using dumbbells to increase strength.
+Flexibility,Neck & Shoulder Stretch,7,1,Stretch to release tension in the neck and shoulders.
+Core,Crunch & Plank Combo,8,3,A combination of crunches and planks for a stronger core.
+Strength,Deadlift & Squat Routine,20,3,A challenging workout focusing on deadlifts and squats for strength.
+HIIT,Cardio HIIT Sprint Blast,20,3,Sprint intervals mixed with bodyweight exercises for fat loss.
+Cardio,High-Intensity Running,15,3,A high-intensity running workout to push your limits.
+Strength,Total Body Circuit Strength,20,3,A total-body strength workout to challenge all muscle groups.
+Flexibility,Spinal & Hip Flexor Stretch,10,1,Stretch your spine and hips to improve flexibility and mobility.
+Core,Oblique Twist & Crunches,8,3,Target your obliques and abs with twists and crunches.
+Strength,Bicep & Tricep Strength,15,2,Strengthen biceps and triceps with targeted exercises.
+HIIT,High-Energy Jumping Jack,12,3,A high-intensity jumping jack workout to increase your heart rate.
+Cardio,Cycling Sprints,15,3,Sprint intervals on a bike to burn calories and build stamina.
+Strength,Lower Body Toning Circuit,20,2,Focus on toning your lower body with squats and lunges.
+Flexibility,Full Body Flexibility Stretch,12,1,A full-body stretching routine to improve flexibility.
+Core,Plank & Russian Twists,8,3,Strengthen your core with planks and Russian twists.
+Strength,Chest & Biceps Burn,15,2,Focus on chest and biceps with push-ups and curls.
+HIIT,Jumping Jack Tabata,12,3,A fast-paced Tabata workout using jumping jacks to burn calories.
+Cardio,Long-Distance Running,30,2,A long-distance run to improve endurance and stamina.
+Strength,Full Body Dumbbell Routine,20,3,Dumbbell exercises to target all major muscle groups.
+Flexibility,Lower Back & Hamstring Stretch,10,1,Focus on stretching the lower back and hamstrings for better flexibility.
+Core,Ab & Leg Raise Routine,10,3,Ab-focused workout with leg raises and crunches.
+Strength,Glute & Hamstring Strength,15,2,A targeted routine to strengthen glutes and hamstrings.
+HIIT,HIIT Full Body Strength,20,3,Full-body workout combining cardio and strength exercises.
+Cardio,Interval Walking Routine,20,2,A walk routine with alternating intervals for fat loss.
+Strength,Back & Triceps Strength,15,2,Strengthen your back and triceps with this workout.
+Flexibility,Upper Body Stretch Routine,8,1,A gentle stretch routine to release upper body tension.
+Core,Leg Raise & Plank Routine,10,3,Combination of leg raises and planks for a powerful core workout.
+Strength,Lower Body Power,20,3,A lower-body workout to build strength in your legs and glutes.
+Cardio,Quick Cardio Burn,12,3,A high-intensity cardio session to kickstart fat burning.
+Strength,Full Body Dumbbell Strength,20,3,Use dumbbells for a full-body workout focusing on strength.
+HIIT,10-Minute HIIT Challenge,10,3,A fast-paced HIIT workout to maximize calorie burn.
+Flexibility,Full Body Yoga Routine,15,1,A relaxing yoga routine to increase flexibility and reduce stress.
+Core,5-Minute Abs Burn,5,3,"A short, effective workout targeting the abs."
+Strength,Squat & Deadlift Routine,15,3,A strength-building routine with squats and deadlifts.
+Cardio,Stair Climb Intervals,20,2,Intervals of stair climbing to build stamina and burn fat.
+Strength,Upper Body Strength Circuit,20,3,A circuit focusing on building upper body strength.
+HIIT,Total Body HIIT Circuit,20,3,A high-intensity workout circuit for full-body strength.
+Flexibility,Hip & Back Stretch Routine,12,1,Stretch routine focused on the hips and back for mobility.
+Core,Bicycle Crunch Routine,7,3,Target your abs and obliques with bicycle crunches.
+Strength,Glute & Leg Power,15,3,A workout to build glute and leg strength with targeted moves.
+HIIT,Tabata Cardio Burn,12,3,A high-intensity Tabata workout to torch calories fast.
+Cardio,Interval Running,20,3,Run intervals to increase cardiovascular endurance.
+Strength,Triceps & Chest Burn,12,2,Focus on building your triceps and chest muscles.
+Flexibility,Shoulder & Arm Stretch,8,1,A stretching routine to release tension in the shoulders and arms.
+Core,Side Plank & Leg Raise Combo,10,3,A core-strengthening combo with side planks and leg raises.
+Strength,Dumbbell Leg Strength,15,2,Strengthen your legs using dumbbells for added resistance.
+HIIT,Full Body Jumping Jacks,15,3,"A full-body, high-intensity workout using jumping jacks."
+Cardio,High-Intensity Walking,20,2,Power walk intervals to increase heart rate and stamina.
+Strength,Dumbbell Upper Body Circuit,20,3,An upper-body workout circuit using dumbbells.
+Flexibility,Deep Stretch & Relax,10,1,A full-body deep stretch to promote flexibility and relaxation.
+Core,Plank to Push-up Challenge,10,3,A challenging routine combining planks and push-ups.
+Strength,Leg Day Strength Routine,20,3,A leg-focused workout to build strength and power.
+HIIT,Speed & Endurance HIIT,15,3,High-speed intervals to improve endurance and burn fat.
+Cardio,Jog & Sprint Intervals,20,3,Alternating jogging and sprinting intervals for fat loss.
+Strength,Upper Body Power Strength,15,3,Focus on upper body strength with power-building exercises.
+Flexibility,Full Body Stretch & Flex,12,1,A full-body stretch to promote flexibility and mobility.
+Core,Reverse Crunch & Leg Raise,8,3,A combination of reverse crunches and leg raises to target abs.
+Strength,Back & Biceps Strength,15,2,Strengthen your back and biceps with targeted exercises.
+HIIT,Cardio HIIT Power,20,3,A powerful cardio workout designed to burn fat and improve stamina.
+Cardio,Interval Cycling Challenge,20,2,Cycling intervals for full-body conditioning and endurance.
+Strength,Total Body Strength & Burn,20,3,Full-body strength training to increase muscle mass and burn fat.
+Flexibility,Hamstring Stretch Routine,8,1,A simple stretch to improve hamstring flexibility.
+Core,Core Stability & Strength,10,3,Focus on building core stability and strength.
+Strength,Glute & Hamstring Burn,12,2,A workout targeting the glutes and hamstrings for strength.
+HIIT,HIIT Endurance Blast,15,3,A high-intensity endurance workout designed to burn calories.
+Cardio,Quick Sprints & Jogging,15,3,Sprint and jog intervals to increase cardiovascular fitness.
+Strength,Dumbbell Full Body Burn,20,3,Full-body workout using dumbbells for strength and endurance.
+Flexibility,Yoga Stretching Flow,12,1,A gentle yoga routine to increase flexibility and relieve stress.
+Core,Plank & Crunch Routine,10,3,A combination of planks and crunches to target your core.
+Strength,Triceps & Glute Burn,15,2,Focus on your triceps and glutes with targeted exercises.
+HIIT,High-Intensity Core Blast,12,3,A high-intensity workout focused on your core.
+Cardio,Fast-paced Running Intervals,20,3,Intense running intervals to improve cardiovascular endurance.
+Strength,Leg & Glute Strength Circuit,20,2,Strengthen your legs and glutes with this circuit workout.
+Flexibility,Spinal & Hip Flexor Stretch,10,1,Stretch routine for spinal and hip flexibility.
+Core,Side Plank & Bicycle Crunch,10,3,Target your core with side planks and bicycle crunches.
+Strength,Full Body Strength Routine,20,3,A full-body workout to increase overall strength.
+HIIT,Tabata Full Body HIIT,15,3,A Tabata-style workout with full-body movements for calorie burn.
+Cardio,Steady-State Jogging,25,2,A steady jogging routine to increase endurance and stamina.
+Strength,Upper Body Strength Blast,15,3,Focus on your upper body muscles to increase strength and tone.
+Flexibility,Lower Body Stretch Routine,10,1,A gentle stretch routine for your lower body.
+Core,Ab & Leg Raise Circuit,12,3,A targeted circuit workout for your abs and legs.
+Strength,Dumbbell Leg & Glute Circuit,15,2,A workout focusing on toning and strengthening your legs and glutes.
+HIIT,Quick High-Intensity Circuit,12,3,"A fast-paced, intense workout to maximize calorie burn."
+Cardio,Walking & Sprint Intervals,20,2,Power walking and sprinting intervals for stamina and fat loss.
+Strength,Core & Arm Strength Circuit,15,2,Strengthen your core and arms with targeted exercises.
+Flexibility,Stretch & Flexibility Flow,12,1,A flexibility flow to increase range of motion and reduce stress.
+Core,Russian Twist & Plank,10,3,A combination of Russian twists and planks for a strong core.
+Strength,Full Body Dumbbell Workout,20,3,Dumbbell workout targeting all muscle groups for full-body strength.
+HIIT,Sprint & Jumping Jack HIIT,15,3,A sprint and jumping jack combo for maximum fat burn.
+Cardio,Power Running Intervals,15,3,Intense running intervals designed to increase your endurance.
+Flexibility,Quick Stretch & Flex,7,1,A series of stretches to improve flexibility and mobility.
+Core,5-Minute Abs Burn,5,3,"A short, intense workout targeting your core muscles."
+Strength,Lower Body Burn,10,2,Lower body exercises to tone legs and glutes.
+Cardio,High-Intensity Cardio,20,3,A challenging cardio routine to increase heart rate and burn fat.
+Core,Core Crunches,6,2,Focus on strengthening your abs and lower back muscles.
+Flexibility,Deep Stretch & Relax,8,1,A relaxing stretch routine for flexibility and recovery.
+Strength,Arm Toning Workout,12,2,Focus on exercises that tone and strengthen arms.
+HIIT,Quick HIIT Circuit,10,3,Fast-paced interval training for a quick calorie burn.
+Cardio,Sprint Intervals,15,3,Sprint intervals followed by short rest periods for fat burning.
+Strength,Leg Day Burn,20,3,"Lower body workout targeting quads, hamstrings, and glutes."
+Flexibility,Full Body Stretch Routine,10,1,A full-body stretch for improving flexibility and range of motion.
+Core,Oblique Burn,7,2,Targeting the oblique muscles for a toned waistline.
+Strength,Chest & Triceps Strength,12,2,Focus on strengthening chest and triceps with bodyweight exercises.
+HIIT,Tabata HIIT,15,3,A high-intensity Tabata routine for maximum calorie burn.
+Cardio,Jump Rope Challenge,10,3,A fast-paced jump rope workout for full-body conditioning.
+Strength,Glutes & Hamstrings,15,2,A workout to strengthen and tone the glutes and hamstrings.
+Flexibility,Yoga Flex & Flow,12,1,A gentle yoga routine to improve flexibility and reduce stress.
+Core,Plank & Crunches,8,3,A combination of planks and crunches to target your core.
+Strength,Back Strength Routine,12,2,Exercises focused on strengthening the back and improving posture.
+HIIT,High-Energy Interval,20,3,A mix of high-energy exercises to boost stamina and burn fat.
+Cardio,Steady-State Cardio,30,2,"A steady, moderate-intensity cardio routine for endurance."
+Flexibility,Lower Body Stretch,8,1,Stretching routine focused on legs and hips.
+Core,Mountain Climbers,5,3,Intense core workout targeting abs and hip flexors.
+Strength,Squat & Deadlift Routine,15,3,A routine focused on squats and deadlifts for leg and core strength.
+HIIT,Fat Burner HIIT,15,3,High-intensity workout for fat burning and endurance.
+Cardio,Cycling Intervals,20,2,A mix of cycling intervals for improved cardiovascular fitness.
+Strength,Bodyweight Strength Circuit,10,2,Full-body bodyweight exercises for strength and toning.
+Flexibility,Morning Stretch Routine,7,1,A gentle stretch routine to start your day.
+Core,Russian Twists,6,2,Focus on obliques and rotational movement for a strong core.
+Strength,Shoulder Press Routine,12,2,Targeting shoulders with press exercises.
+HIIT,30-Minute HIIT Workout,30,3,A full 30-minute HIIT workout for maximum calorie burn.
+Cardio,Fast Walking Routine,20,2,Fast-paced walking to improve cardiovascular health.
+Strength,Total Body Strength,15,2,A full-body strength workout focusing on all major muscle groups.
+Flexibility,Hip Flexor Stretch,8,1,Focus on stretching the hip flexors for improved mobility.
+Core,Leg Raises,5,3,Focus on strengthening the lower abs with leg raises.
+Strength,Bicep & Back Routine,12,2,Strengthening biceps and back muscles.
+HIIT,Cardio Power Circuit,20,3,A high-intensity cardio workout designed to burn calories fast.
+Cardio,Walking Lunges,15,2,A low-impact cardio exercise to tone legs and improve endurance.
+Strength,Full Body Strength Circuit,20,3,Full-body workout targeting all muscle groups.
+Flexibility,Spinal Twist & Stretch,8,1,A gentle routine to stretch the spine and improve flexibility.
+Core,Side Planks & Crunches,7,3,Combination of side planks and crunches for a stronger core.
+Strength,Triceps & Abs Workout,10,2,A circuit that targets triceps and core muscles.
+HIIT,High-Knee Intervals,15,3,High-intensity intervals focusing on cardiovascular endurance.
+Cardio,Zumba Dance Workout,25,2,Fun and energetic dance workout to burn calories.
+Strength,Leg & Glutes Strength,15,2,Lower body workout focusing on legs and glutes.
+Flexibility,Shoulder & Arm Stretch,7,1,Stretching routine for shoulders and arms.
+Core,Bicycle Crunches,6,2,A core exercise to strengthen the abs and obliques.
+Strength,Squat & Lunge Circuit,15,2,Focus on squats and lunges to strengthen legs and glutes.
+HIIT,Extreme HIIT Workout,25,3,A challenging high-intensity workout designed to burn fat quickly.
+Cardio,Dance Cardio Blast,20,2,A fun cardio workout set to music for full-body conditioning.
+Strength,Chest Press & Push-ups,15,2,Targeting chest muscles with press and push-up exercises.
+Flexibility,Back & Spine Stretch,8,1,Stretching the back and spine to improve flexibility.
+Core,Crunch & Bridge Routine,10,3,Intense core routine focusing on crunches and glute bridges.
+Strength,Deadlift & Squat Challenge,20,3,A challenge combining deadlifts and squats for strength.
+HIIT,Sprint & Jump HIIT,20,3,High-intensity interval workout combining sprints and jumps.
+Cardio,Step-Up Intervals,15,2,Step-ups on a bench for a low-impact cardio workout.
+Strength,Core & Glutes Workout,15,2,Focus on strengthening core and glutes with various exercises.
+Flexibility,Full Body Yoga Stretch,10,1,A yoga-inspired stretch routine for the entire body.
+Core,Sit-Up & Leg Raises,7,3,A quick and effective core workout targeting abs and lower body.
+Strength,Arm & Shoulder Circuit,12,2,Strengthen arms and shoulders with targeted exercises.
+HIIT,Fat Burn HIIT Circuit,15,3,A fat-burning HIIT workout for full-body conditioning.
+Cardio,Power Walking,20,2,Fast-paced walking workout to increase endurance.
+Strength,Full Body Power Strength,20,3,Power strength exercises targeting full body muscle groups.
+Flexibility,Leg Stretch Routine,8,1,Focus on stretching the legs to improve flexibility.
+Core,Leg Lifts & Crunches,5,3,Targeting the abs with leg lifts and crunches.
+Strength,Dumbbell Circuit,15,2,A dumbbell-focused circuit for strength and toning.
+HIIT,Plyometric Power,15,3,Plyometric exercises to build strength and burn fat.
+Cardio,Quick Cardio Burst,10,3,"A fast, intense cardio burst to kickstart your metabolism."
+Strength,Push-up & Squat Routine,15,2,Combine push-ups and squats to build upper and lower body strength.
+HIIT,Intense HIIT Circuit,20,3,An intense circuit of high-energy intervals to burn calories fast.
+Flexibility,Yoga Flexibility Flow,12,1,A yoga flow to improve flexibility and reduce tension.
+Core,Leg Raise & Plank Combo,8,3,A combination of leg raises and planks for core strength.
+Strength,Full Body Burn,20,3,A full-body workout for strength and muscle endurance.
+Cardio,High-Intensity Sprints,15,3,Sprint intervals to push your limits and burn fat.
+Strength,Upper Body Circuit,12,2,"Strengthen your arms, shoulders, and chest with this circuit."
+HIIT,Jumping Jack Challenge,10,3,"A fun, high-intensity workout with jumping jacks."
+Flexibility,Dynamic Stretch Routine,8,1,A dynamic warm-up stretch to increase mobility.
+Core,Bicycle Crunch Challenge,7,3,Target your abs with bicycle crunches for a tight core.
+Strength,Glute Bridge Burn,12,2,A workout focusing on glutes and lower back strength.
+HIIT,Crossfit HIIT,20,3,A Crossfit-inspired workout to challenge your strength and endurance.
+Cardio,Stair Climb Workout,15,2,Climbing stairs for cardio and leg toning.
+Strength,Back & Biceps Strength,12,2,Focus on strengthening back and biceps for better posture.
+Flexibility,Deep Stretch & Release,7,1,A deep stretch to improve flexibility and reduce tension.
+Core,Core Stability Routine,10,2,Strengthen your core muscles with stability exercises.
+Strength,Dumbbell Strength Routine,15,3,Use dumbbells for a full-body strength workout.
+HIIT,Tabata Cardio Challenge,15,3,A high-intensity Tabata workout with short bursts of activity.
+Cardio,Running Intervals,20,3,Interval running to improve cardiovascular fitness.
+Strength,Full Body Dumbbell Circuit,15,2,Dumbbell circuit workout targeting all major muscle groups.
+Flexibility,Shoulder & Neck Stretch,8,1,A stretch to release tension in the shoulders and neck.
+Core,Side Plank & Crunch,8,3,Combination of side planks and crunches for core strengthening.
+Strength,Leg Day Strength,20,3,Focus on strengthening your legs and glutes.
+HIIT,HIIT Plyometric Circuit,15,3,A plyometric-focused HIIT workout to boost power and endurance.
+Cardio,Bike Interval Training,20,2,Interval cycling workout for full-body conditioning.
+Strength,Chest & Core Burn,12,2,Burn fat and build muscle with chest and core exercises.
+Flexibility,Full Body Stretch,10,1,A full-body stretch routine to increase flexibility.
+Core,Russian Twist Challenge,7,3,Challenge your core with Russian twists and rotations.
+Strength,Shoulder Press & Lateral Raise,12,2,Strengthen shoulders with press and lateral raises.
+HIIT,Sprint Intervals Challenge,15,3,Sprint intervals with brief rest periods to maximize fat burn.
+Cardio,Quick HIIT Blast,10,3,"A quick, explosive HIIT workout to burn calories fast."
+Strength,Triceps & Chest Burn,12,2,A workout focused on building your triceps and chest muscles.
+Flexibility,Hamstring Stretch,8,1,A stretch routine to increase hamstring flexibility.
+Core,Plank to Push-up,10,3,A combination of planks and push-ups for core strength.
+Strength,Glute & Core Strength,15,2,Focus on glutes and core muscles to improve overall strength.
+HIIT,High-Energy Burpees,12,3,A high-intensity burpee workout to maximize calorie burn.
+Cardio,Low Impact Cardio,20,2,Low-impact cardio for improved fitness and fat loss.
+Strength,Full Body Strength Circuit,20,3,A challenging full-body workout targeting all muscle groups.
+Flexibility,Spinal & Hip Flexor Stretch,10,1,Stretch for better mobility in the spine and hips.
+Core,Abs & Lower Back Routine,8,3,Strengthen abs and lower back for better posture and stability.
+Strength,Squat & Leg Strength,15,2,A lower-body workout to build strength in your legs.
+HIIT,20-Minute Tabata Workout,20,3,A full 20-minute Tabata workout to burn fat and build strength.
+Cardio,Interval Running Routine,15,3,Run intervals to improve cardiovascular endurance.
+Strength,Deadlift Strength Circuit,15,3,Focus on deadlifts to build strength in your lower body.
+Flexibility,Deep Lower Back Stretch,8,1,Stretch routine to release tension in the lower back.
+Core,Leg Raise & Oblique Twist,10,3,Strengthen your core with leg raises and oblique twists.
+Strength,Full Body Power Routine,20,3,A powerful full-body routine to build strength and endurance.
+HIIT,HIIT Bodyweight Blast,15,3,A bodyweight-focused HIIT workout to challenge your endurance.
+Cardio,Fast Walking Intervals,20,2,Interval walking workout for low-impact cardio.
+Strength,Glute & Thigh Workout,15,2,Strengthen glutes and thighs with various exercises.
+Flexibility,Yoga Stretch & Flexibility,12,1,A gentle yoga stretch routine for flexibility and recovery.
+Core,Side Plank & Twist,10,3,Strengthen your core with side planks and twists.
+Strength,Arm & Shoulder Burn,12,2,A focused workout for building arm and shoulder muscles.
+HIIT,Cardio & Strength HIIT,20,3,High-intensity cardio combined with strength exercises.
+Cardio,Power Walking Challenge,20,2,A challenging power walk to build endurance and burn calories.
+Strength,Dumbbell Strength Circuit,20,2,Dumbbell-focused circuit for toning and strengthening muscles.
+Flexibility,Full Body Yoga Flow,10,1,A calming yoga flow to increase flexibility and reduce stress.
+Core,Bicycle & Leg Raise Combo,10,3,A combination of bicycle crunches and leg raises for core strength.
+Strength,Upper Body Strength Blast,15,3,A blast workout for upper body strength and muscle toning.
+HIIT,Advanced HIIT Workout,20,3,A high-intensity workout for advanced fitness levels.
+Cardio,Cardio Kickboxing,15,3,A cardio kickboxing workout to burn fat and improve strength.
+Strength,Back & Biceps Strength,12,2,A workout focused on building back and bicep muscles.
+Flexibility,Stretch & Flex Routine,8,1,A gentle stretch and flexibility routine to improve range of motion.
+Core,Plank & Leg Raise Combo,8,3,A combination of planks and leg raises to strengthen your core.
+Strength,Leg Toning Circuit,15,2,A circuit workout focusing on toning and strengthening the legs.
+HIIT,Fat-Burning HIIT Routine,15,3,A high-intensity workout to burn fat and boost metabolism.
+Cardio,Fast Walking & Jogging,25,2,A combination of walking and jogging intervals to improve endurance.
+Strength,Glute & Hamstring Workout,20,2,Focus on building strength in your glutes and hamstrings.
+Cardio,Full Body Cardio Burn,15,3,A full-body cardio workout to increase heart rate and burn fat.
+Strength,Upper Body Power,15,2,Power up your upper body with exercises targeting arms and shoulders.
+HIIT,Jump Rope Intervals,12,3,A high-intensity interval workout using a jump rope to burn calories.
+Flexibility,Shoulder Stretch Routine,8,1,A series of stretches to improve shoulder mobility.
+Core,Abdominal Burn,7,3,"A short, intense workout focused on burning abdominal fat."
+Strength,Leg Press & Squat Routine,20,3,A combination of leg presses and squats for leg strength.
+Cardio,Running Intervals Challenge,20,3,Sprint and jog intervals to challenge your endurance and burn fat.
+Strength,Total Body Dumbbell Burn,15,2,Full-body workout with dumbbells to build strength and tone.
+HIIT,Quick Bodyweight HIIT,12,3,"A short, intense bodyweight HIIT workout to burn fat."
+Flexibility,Yoga Stretch for Flexibility,10,1,A yoga-inspired stretch routine to increase flexibility and mobility.
+Core,Russian Twists & Crunches,10,3,A dynamic routine to target your core and obliques.
+Strength,Glute & Thigh Workout,15,2,Focus on glutes and thighs for strength and toning.
+HIIT,High-Intensity Interval Challenge,20,3,A high-energy interval workout to challenge your stamina.
+Cardio,Power Walking Routine,25,2,A power walk workout to increase endurance and burn fat.
+Strength,Shoulder & Triceps Burn,15,2,Focus on shoulders and triceps to strengthen and tone.
+Flexibility,Full Body Stretching Routine,12,1,A full-body stretch to enhance flexibility and reduce tension.
+Core,Side Planks & Crunches,8,3,A combination of side planks and crunches for core stability.
+Strength,Dumbbell Upper Body Workout,12,2,A dumbbell workout to strengthen your upper body muscles.
+HIIT,Cardio Power Blast,15,3,High-intensity workout with intervals to burn calories fast.
+Cardio,Sprint & Jog Intervals,20,3,A mix of sprints and jogging to boost cardiovascular fitness.
+Strength,Full Body Strength Circuit,20,3,Full-body workout circuit to improve strength and endurance.
+Flexibility,Hamstring Stretch Routine,10,1,Stretch to increase flexibility in your hamstrings.
+Core,Bicycle Crunch Circuit,7,3,A quick core circuit with bicycle crunches and leg raises.
+Strength,Back & Shoulder Routine,15,2,Strengthen your back and shoulders with this effective workout.
+HIIT,HIIT for Fat Loss,20,3,A HIIT workout designed to maximize fat burning.
+Cardio,Jumping Jacks & Sprints,15,3,A mix of jumping jacks and sprints to burn fat and improve endurance.
+Strength,Glutes & Legs Strengthening,20,2,A workout focused on building strength in your glutes and legs.
+Flexibility,Dynamic Lower Body Stretch,8,1,A dynamic stretch routine to increase flexibility in legs and hips.
+Core,Leg Raise & Oblique Crunch,10,3,Target your abs with leg raises and oblique crunches.
+Strength,Chest & Back Strength,15,2,Strengthen your chest and back with this routine.
+HIIT,Tabata Fat Burning Circuit,15,3,A Tabata-style workout to burn fat and improve stamina.
+Cardio,Cycling Intervals Challenge,20,2,A cycling workout using intervals to build endurance and stamina.
+Strength,Arm & Shoulder Strength,12,2,Focus on strengthening your arms and shoulders with dumbbells.
+Flexibility,Full Body Yoga Flow,10,1,A gentle yoga routine to enhance flexibility and mobility.
+Core,Mountain Climbers & Planks,8,3,Combine mountain climbers and planks for an intense core workout.
+Strength,Leg & Glute Strengthening,15,2,Focus on legs and glutes to build lower body strength.
+HIIT,HIIT for Beginners,15,2,A beginner-friendly HIIT workout to build stamina.
+Cardio,Steady-State Running,20,2,A steady running workout to improve cardiovascular fitness.
+Strength,Full Body Dumbbell Strength,15,3,A full-body workout using dumbbells to increase strength.
+Flexibility,Neck & Shoulder Stretch,7,1,Stretch to release tension in the neck and shoulders.
+Core,Crunch & Plank Combo,8,3,A combination of crunches and planks for a stronger core.
+Strength,Deadlift & Squat Routine,20,3,A challenging workout focusing on deadlifts and squats for strength.
+HIIT,Cardio HIIT Sprint Blast,20,3,Sprint intervals mixed with bodyweight exercises for fat loss.
+Cardio,High-Intensity Running,15,3,A high-intensity running workout to push your limits.
+Strength,Total Body Circuit Strength,20,3,A total-body strength workout to challenge all muscle groups.
+Flexibility,Spinal & Hip Flexor Stretch,10,1,Stretch your spine and hips to improve flexibility and mobility.
+Core,Oblique Twist & Crunches,8,3,Target your obliques and abs with twists and crunches.
+Strength,Bicep & Tricep Strength,15,2,Strengthen biceps and triceps with targeted exercises.
+HIIT,High-Energy Jumping Jack,12,3,A high-intensity jumping jack workout to increase your heart rate.
+Cardio,Cycling Sprints,15,3,Sprint intervals on a bike to burn calories and build stamina.
+Strength,Lower Body Toning Circuit,20,2,Focus on toning your lower body with squats and lunges.
+Flexibility,Full Body Flexibility Stretch,12,1,A full-body stretching routine to improve flexibility.
+Core,Plank & Russian Twists,8,3,Strengthen your core with planks and Russian twists.
+Strength,Chest & Biceps Burn,15,2,Focus on chest and biceps with push-ups and curls.
+HIIT,Jumping Jack Tabata,12,3,A fast-paced Tabata workout using jumping jacks to burn calories.
+Cardio,Long-Distance Running,30,2,A long-distance run to improve endurance and stamina.
+Strength,Full Body Dumbbell Routine,20,3,Dumbbell exercises to target all major muscle groups.
+Flexibility,Lower Back & Hamstring Stretch,10,1,Focus on stretching the lower back and hamstrings for better flexibility.
+Core,Ab & Leg Raise Routine,10,3,Ab-focused workout with leg raises and crunches.
+Strength,Glute & Hamstring Strength,15,2,A targeted routine to strengthen glutes and hamstrings.
+HIIT,HIIT Full Body Strength,20,3,Full-body workout combining cardio and strength exercises.
+Cardio,Interval Walking Routine,20,2,A walk routine with alternating intervals for fat loss.
+Strength,Back & Triceps Strength,15,2,Strengthen your back and triceps with this workout.
+Flexibility,Upper Body Stretch Routine,8,1,A gentle stretch routine to release upper body tension.
+Core,Leg Raise & Plank Routine,10,3,Combination of leg raises and planks for a powerful core workout.
+Strength,Lower Body Power,20,3,A lower-body workout to build strength in your legs and glutes.
+Cardio,Quick Cardio Burn,12,3,A high-intensity cardio session to kickstart fat burning.
+Strength,Full Body Dumbbell Strength,20,3,Use dumbbells for a full-body workout focusing on strength.
+HIIT,10-Minute HIIT Challenge,10,3,A fast-paced HIIT workout to maximize calorie burn.
+Flexibility,Full Body Yoga Routine,15,1,A relaxing yoga routine to increase flexibility and reduce stress.
+Core,5-Minute Abs Burn,5,3,"A short, effective workout targeting the abs."
+Strength,Squat & Deadlift Routine,15,3,A strength-building routine with squats and deadlifts.
+Cardio,Stair Climb Intervals,20,2,Intervals of stair climbing to build stamina and burn fat.
+Strength,Upper Body Strength Circuit,20,3,A circuit focusing on building upper body strength.
+HIIT,Total Body HIIT Circuit,20,3,A high-intensity workout circuit for full-body strength.
+Flexibility,Hip & Back Stretch Routine,12,1,Stretch routine focused on the hips and back for mobility.
+Core,Bicycle Crunch Routine,7,3,Target your abs and obliques with bicycle crunches.
+Strength,Glute & Leg Power,15,3,A workout to build glute and leg strength with targeted moves.
+HIIT,Tabata Cardio Burn,12,3,A high-intensity Tabata workout to torch calories fast.
+Cardio,Interval Running,20,3,Run intervals to increase cardiovascular endurance.
+Strength,Triceps & Chest Burn,12,2,Focus on building your triceps and chest muscles.
+Flexibility,Shoulder & Arm Stretch,8,1,A stretching routine to release tension in the shoulders and arms.
+Core,Side Plank & Leg Raise Combo,10,3,A core-strengthening combo with side planks and leg raises.
+Strength,Dumbbell Leg Strength,15,2,Strengthen your legs using dumbbells for added resistance.
+HIIT,Full Body Jumping Jacks,15,3,"A full-body, high-intensity workout using jumping jacks."
+Cardio,High-Intensity Walking,20,2,Power walk intervals to increase heart rate and stamina.
+Strength,Dumbbell Upper Body Circuit,20,3,An upper-body workout circuit using dumbbells.
+Flexibility,Deep Stretch & Relax,10,1,A full-body deep stretch to promote flexibility and relaxation.
+Core,Plank to Push-up Challenge,10,3,A challenging routine combining planks and push-ups.
+Strength,Leg Day Strength Routine,20,3,A leg-focused workout to build strength and power.
+HIIT,Speed & Endurance HIIT,15,3,High-speed intervals to improve endurance and burn fat.
+Cardio,Jog & Sprint Intervals,20,3,Alternating jogging and sprinting intervals for fat loss.
+Strength,Upper Body Power Strength,15,3,Focus on upper body strength with power-building exercises.
+Flexibility,Full Body Stretch & Flex,12,1,A full-body stretch to promote flexibility and mobility.
+Core,Reverse Crunch & Leg Raise,8,3,A combination of reverse crunches and leg raises to target abs.
+Strength,Back & Biceps Strength,15,2,Strengthen your back and biceps with targeted exercises.
+HIIT,Cardio HIIT Power,20,3,A powerful cardio workout designed to burn fat and improve stamina.
+Cardio,Interval Cycling Challenge,20,2,Cycling intervals for full-body conditioning and endurance.
+Strength,Total Body Strength & Burn,20,3,Full-body strength training to increase muscle mass and burn fat.
+Flexibility,Hamstring Stretch Routine,8,1,A simple stretch to improve hamstring flexibility.
+Core,Core Stability & Strength,10,3,Focus on building core stability and strength.
+Strength,Glute & Hamstring Burn,12,2,A workout targeting the glutes and hamstrings for strength.
+HIIT,HIIT Endurance Blast,15,3,A high-intensity endurance workout designed to burn calories.
+Cardio,Quick Sprints & Jogging,15,3,Sprint and jog intervals to increase cardiovascular fitness.
+Strength,Dumbbell Full Body Burn,20,3,Full-body workout using dumbbells for strength and endurance.
+Flexibility,Yoga Stretching Flow,12,1,A gentle yoga routine to increase flexibility and relieve stress.
+Core,Plank & Crunch Routine,10,3,A combination of planks and crunches to target your core.
+Strength,Triceps & Glute Burn,15,2,Focus on your triceps and glutes with targeted exercises.
+HIIT,High-Intensity Core Blast,12,3,A high-intensity workout focused on your core.
+Cardio,Fast-paced Running Intervals,20,3,Intense running intervals to improve cardiovascular endurance.
+Strength,Leg & Glute Strength Circuit,20,2,Strengthen your legs and glutes with this circuit workout.
+Flexibility,Spinal & Hip Flexor Stretch,10,1,Stretch routine for spinal and hip flexibility.
+Core,Side Plank & Bicycle Crunch,10,3,Target your core with side planks and bicycle crunches.
+Strength,Full Body Strength Routine,20,3,A full-body workout to increase overall strength.
+HIIT,Tabata Full Body HIIT,15,3,A Tabata-style workout with full-body movements for calorie burn.
+Cardio,Steady-State Jogging,25,2,A steady jogging routine to increase endurance and stamina.
+Strength,Upper Body Strength Blast,15,3,Focus on your upper body muscles to increase strength and tone.
+Flexibility,Lower Body Stretch Routine,10,1,A gentle stretch routine for your lower body.
+Core,Ab & Leg Raise Circuit,12,3,A targeted circuit workout for your abs and legs.
+Strength,Dumbbell Leg & Glute Circuit,15,2,A workout focusing on toning and strengthening your legs and glutes.
+HIIT,Quick High-Intensity Circuit,12,3,"A fast-paced, intense workout to maximize calorie burn."
+Cardio,Walking & Sprint Intervals,20,2,Power walking and sprinting intervals for stamina and fat loss.
+Strength,Core & Arm Strength Circuit,15,2,Strengthen your core and arms with targeted exercises.
+Flexibility,Stretch & Flexibility Flow,12,1,A flexibility flow to increase range of motion and reduce stress.
+Core,Russian Twist & Plank,10,3,A combination of Russian twists and planks for a strong core.
+Strength,Full Body Dumbbell Workout,20,3,Dumbbell workout targeting all muscle groups for full-body strength.
+HIIT,Sprint & Jumping Jack HIIT,15,3,A sprint and jumping jack combo for maximum fat burn.
+Cardio,Power Running Intervals,15,3,Intense running intervals designed to increase your endurance.

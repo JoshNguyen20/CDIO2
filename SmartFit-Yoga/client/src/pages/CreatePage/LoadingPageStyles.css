@@ -1,0 +1,179 @@
+/* Container for the entire loading page */
+.loading-container {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.loading-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.loading-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.loading-header p {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* Days section */
+.loading-days {
+  margin: 20px 0;
+}
+
+.day-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.day-row span:first-child {
+  font-size: 16px;
+  color: #333333;
+}
+
+.loading-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffc107;
+  animation: pulse 1.5s infinite;
+}
+
+/* Circle animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+/* Footer section */
+.loading-footer p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loading-footer a.retry-link {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d9534f;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loading-footer a.retry-link:hover {
+  text-decoration: underline;
+}
+
+.info-box {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+}
+/* Loading circle */
+.loading-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffc107; /* Màu vàng mặc định */
+  transition: background-color 0.1s ease; /* Hiệu ứng chuyển màu */
+}
+
+.loading-circle.completed {
+  background-color: #28a745; /* Màu xanh lá khi hoàn thành */
+}
+
+.loading-circle.pending {
+  background-color: #ffc107; /* Giữ màu vàng khi đang chờ */
+}
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.stepper-step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.stepper-step .step-number {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #e0e0e0;
+  color: #666666;
+}
+
+.stepper-step.active .step-number {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.stepper-step.completed .step-number {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.stepper-step.inactive .step-number {
+  background-color: #e0e0e0;
+  color: #666666;
+}
+
+.stepper-step .step-label {
+  font-size: 12px;
+  color: #666666;
+}
+
+.stepper-step.active .step-label {
+  font-weight: bold;
+  color: #000;
+}
+
+.step-line {
+  height: 2px;
+  width: 50px;
+  background-color: #e0e0e0;
+}
+
+.stepper-step.completed ~ .step-line {
+  background-color: #007bff;
+}
+

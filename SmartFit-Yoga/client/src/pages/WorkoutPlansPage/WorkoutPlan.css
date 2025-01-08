@@ -1,0 +1,256 @@
+/* Container for the workout plan */
+.workout-plan-container {
+  padding: 10px 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fefefe;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Styles */
+.workout-header {
+  text-align: center;
+  position: relative;
+  background-image: url('../../../public/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 100px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  transition: background-color 0.3s ease;
+}
+.nutrition-header {
+  text-align: center;
+  position: relative;
+  background-image: url('../../../public/nutribg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 100px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  transition: background-color 0.3s ease;
+}
+.nutrition-header{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.workout-header:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nutrition-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.workout-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Wrapper for workout plans */
+.workout-wrapper {
+  padding: 50px;
+  background-color: #202060;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  color: #456f94;
+  margin: auto;
+}
+.workout-wrapper p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+.workout-wrapper p.error {
+  color: #ff0000;
+}
+
+/* Week and Day Container Styles */
+.workout-week-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.workout-day-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.workout-day-item {
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 100px; /* Allow flexible sizing */
+  transition: background-color 0.3s, transform 0.3s;
+}
+.workout-day-item.active {
+  background-color: #0056b3;
+  color: white;
+}
+.workout-day-item:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Container for the selected day */
+.workout-day-container {
+  padding: 10px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 600px;
+  display: block; 
+  text-align: center;
+}
+/* Daily Item Styles */
+.workout-daily-item {
+  background-color: #f8f9fa;
+  padding: 20px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center; /* Căn giữa tiêu đề và thông tin bên trong */
+}
+
+.workout-daily-item:hover {
+  transform: translateY(-5px); /* Khi hover, item nâng lên một chút */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Tăng độ đậm shadow khi hover */
+}
+
+/* Exercise List Container */
+.exercise-list-container {
+  display: block; /* Thay đổi từ grid sang block */
+  margin-top: 20px;
+}
+
+.workout-daily-item {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #a2b5ee;
+  transition: transform 0.2s;
+}
+
+.workout-daily-item:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
+}
+
+/* Tên bài tập */
+.workout-daily-item h3 {
+  margin: 0;
+  font-size: 1.8rem; 
+  color: #333;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Thông tin khác (duration, intensity) */
+.workout-daily-item p {
+  margin: 5px 0;
+  color: #0c0c0c; /* Màu sắc tối hơn cho các mô tả */
+  font-size: 1.1rem; /* Kích thước chữ vừa phải để dễ đọc */
+}
+
+.workout-daily-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Hiển thị các thông tin mô tả theo dạng "row" */
+.workout-daily-item .info {
+  display: flex;
+  justify-content: space-between; /* Căn chỉnh thông tin vào hai bên */
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #000000; /* Màu sắc dịu nhẹ cho thông tin */
+}
+
+.workout-daily-item .info span {
+  font-weight: 500;
+}
+
+/* Modal Styles */
+.exercise-detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+.modal-content {
+  margin-top: 20px;
+}
+.modal-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+.modal-footer button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.modal-footer button:hover {
+  background-color: #0056b3;
+}
+
+.workout-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+  border-radius: 8px;
+}

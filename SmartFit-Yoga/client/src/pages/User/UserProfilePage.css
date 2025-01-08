@@ -1,0 +1,160 @@
+/* Container styling */
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.profile-header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Card styling */
+.profile-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card p {
+  font-size: 16px;
+
+  color: #555;
+}
+
+/* Editable field styling */
+.profile-field {
+  margin-bottom: 15px;
+}
+
+.profile-field label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.profile-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Buttons styling */
+.profile-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.logout-btn,
+.edit-btn,
+.save-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.logout-btn{
+  background-color: #f44d34;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #1e7e34;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.logout-btn:hover ,.cancel-btn:hover {
+  background-color: #b21f2d;
+}
+.buttonstyle{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; 
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .profile-card p {
+    font-size: 14px;
+  }
+
+  .profile-header {
+    font-size: 24px;
+  }
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}

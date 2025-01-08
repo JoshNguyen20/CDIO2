@@ -1,0 +1,117 @@
+.notification-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  
+  .notification-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .mark-read-btn {
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .notification-list {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .notification-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background 0.2s ease;
+  }
+  
+  .notification-item.unread {
+    background-color: #f0f8ff;
+  }
+  
+  .notification-item.read {
+    background-color: #ffffff;
+  }
+  
+  .notification-item:hover {
+    background-color: #e9f5ff;
+  }
+  
+  .notification-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .notification-avatar {
+    font-size: 1.5rem;
+  }
+  
+  .notification-message {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .notification-from {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .notification-empty {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  /* Scrollbar styling */
+  .notification-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .notification-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .notification-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

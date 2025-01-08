@@ -1,0 +1,271 @@
+/* Tổng thể */
+.manage-user-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.manage-user-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.manage-user-container h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.manage-user-container p {
+  margin-bottom: 20px;
+  color: #666;
+}
+.paccept{
+  margin-top: 20px;
+  color: #666;
+}
+
+/* Thông báo */
+.notification {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+/* Bảng hiển thị người dùng */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #f4f7fa;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Trạng thái đang tải */
+.loading {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.edit-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-user-form label {
+  font-size: 14px;
+  color: #333;
+}
+
+.edit-user-form input,
+.edit-user-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.edit-user-form .submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.edit-user-form .submit-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-user-form .cancel-button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.edit-user-form .cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* Nút chỉnh sửa */
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 8px;
+  border: none;
+  font-size: large;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding-bottom: 3px;
+  margin-right: 3px;
+
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.edit-button:active {
+  background-color: #003f88;
+  transform: scale(0.95);
+}
+
+.delete-button {
+  background-color: #f13a3a;
+  color: #fff;
+  padding: 5px 8px;
+  border: none;
+  font-size: large;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding-bottom: 3px;
+}
+
+.delete-button:hover {
+  background-color: #d9363e;
+  transform: scale(1.05);
+}
+
+.confirm-delete {
+  background-color: #fff5f5;
+  padding-bottom: 20px;
+  border: 1px solid #ff4d4f;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delete-confirm-button {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.delete-confirm-button:hover {
+  background-color: #d9363e;
+}
+
+.delete-cancel-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.add-user-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-button:hover {
+  background-color: #218838;
+}
+
+.add-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-user-form label {
+  font-size: 14px;
+  color: #333;
+}
+
+.add-user-form input,
+.add-user-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.add-user-form .submit-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.add-user-form .cancel-button{
+  margin-top: 10px;
+  background-color: #5e5e5e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}

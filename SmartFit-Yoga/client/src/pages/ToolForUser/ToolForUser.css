@@ -1,0 +1,112 @@
+.tools-page {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .tools-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .tools-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+  }
+  
+  .tools-header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .tool-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .tool-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .tool-card h2 {
+    margin-bottom: 20px;
+    color: #2980b9;
+  }
+  
+  .tool-description {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-group button {
+    background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px; /* Tăng padding để các nút đồng đều */
+  font-size: 1rem;
+  font-weight: bold; /* Tạo sự nổi bật đồng đều */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của container */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+  margin-bottom: 10px; /* Cách đều phía dưới */
+  }
+  
+  .input-group button:hover {
+    background-color: #2980b9;
+  }
+  
+  .result {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #2ecc71;
+    font-weight: bold;
+  }
+
+  .input-group input,
+.input-group select {
+  padding: 12px; /* Đảm bảo đồng nhất với các nút */
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  width: 100%; /* Chiều rộng 100% cho đồng đều */
+}
+
+.tool-card h2 {
+  margin-bottom: 15px;
+  color: #2980b9;
+  font-size: 1.5rem; /* Làm tiêu đề đồng nhất kích thước */
+  font-weight: 600;
+}
+  

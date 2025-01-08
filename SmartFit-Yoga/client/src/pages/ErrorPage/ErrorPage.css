@@ -1,0 +1,65 @@
+.error-body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.error-container {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.error-code {
+    font-size: 96px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.error-message {
+    font-size: 24px;
+    color: #6c757d;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.background-layer {
+    font-size: 200px;
+    color: #e0e0e0;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.error-container a {
+    color: #0534d0; /* White color for the link */
+    text-decoration: underline; /* Underline the link */
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Space above the link */
+    display: inline-block; /* Make it an inline block for margin */
+}
+
+.error-container a:hover {
+    color: #ffcc00; /* Change color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+/* src/pages/ErrorPage/ErrorPage.css */
+.home-link {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #030303;
+}
+
+.home-link:hover {
+    color: #ff0000; /* Change this to your desired hover color */
+}

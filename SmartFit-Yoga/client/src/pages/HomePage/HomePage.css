@@ -1,0 +1,20 @@
+.home-page {
+    min-height: 100vh;
+}
+
+/* .logout-button {
+    padding: 10px 20px;
+    background-color: #FF4B2B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #E63A1F;
+} */

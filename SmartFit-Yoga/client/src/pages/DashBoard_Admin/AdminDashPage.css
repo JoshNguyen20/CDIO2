@@ -1,0 +1,29 @@
+.admin-dashboard {
+  display: flex;
+  height: 100vh; 
+}
+
+.admin-navbar {
+  flex-shrink: 0; /* Không co giãn */
+  transition: width 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt khi thay đổi */
+}
+
+.admin-navbar.hidden {
+  transform: translateX(-100%);
+}
+
+.admin-content {
+  flex-grow: 1; /* Khu vực nội dung chính mở rộng để chiếm không gian còn lại */
+  transition: margin-left 0.3s ease; /* Hiệu ứng mượt khi navbar đóng/mở */
+  padding: 20px;
+  background-color: #f7f6ff;
+  overflow-y: auto;
+}
+
+.admin-content.expanded {
+  margin-left: 0;
+}
+
+.admin-content:not(.expanded) {
+  margin-left: 18%;
+}

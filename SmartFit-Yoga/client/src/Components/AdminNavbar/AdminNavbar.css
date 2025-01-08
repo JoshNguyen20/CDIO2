@@ -1,0 +1,129 @@
+.admin-navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 18%;
+    background-color: #1a2033;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+.admin-navbar.hidden {
+    transform: translateX(-100%);
+}
+
+.admin-title {
+    font-size: 23px;
+    color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.admin-header {
+    display: flex;
+    align-items: center;
+    gap: 55%;
+    padding: 30px;
+}
+
+.admin-hide-button {
+    cursor: pointer;
+    font-size: 23px;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+}
+
+.admin-show-button {
+    position: fixed;
+    left: 0;
+    top: 15px;
+    padding: 10px;
+    background-color: #3b4a7a00;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    z-index: 100; /* Đảm bảo nó hiển thị trên các phần tử khác */
+}
+
+
+.admin-avatar {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Căn giữa avatar */
+}
+
+.avatar-image {
+    width: 120px; /* Kích thước hình ảnh */
+    height:120px;
+    border-radius: 50%; /* Làm tròn ảnh thành hình tròn */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border: 2px solid #ffffff;
+    
+}
+
+/* CSS cho tên và role */
+.admin-name-role {
+    display: flex;
+    flex-direction: column; /* Đảm bảo tên nằm trên và role nằm dưới */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    justify-content: center; /* Căn giữa phần tử theo chiều dọc nếu cần */
+    margin-top: 20px;
+    width: 100%; /* Đảm bảo có đủ không gian cho nội dung */
+}
+
+.admin-name {
+    font-size: 23px; /* Kích thước chữ tên */
+    font-weight: bold; /* Làm đậm chữ tên */
+    color: #ffffff; /* Màu chữ trắng */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.admin-role {
+    font-size: 14px; /* Kích thước chữ role */
+    color: #56b3ff; /* Màu chữ xanh dương cho role */
+    margin-top: 5px; /* Khoảng cách giữa tên và role */
+    margin-bottom: 15%;
+}
+
+/* CSS cho phần Dashboard Menu */
+.admin-dashboard-button {
+    display: flex;                
+    align-items: center;                           
+    cursor: pointer;            
+    border-radius: 5px;          
+    width: 100%;
+    margin-bottom: 15px;
+    color:#ffffff
+}
+
+.dashboard-icon {
+    font-size: 21px;                             
+    margin-right: 10px;
+    align-items: flex-start;
+    margin-left: 15%;
+    padding-right: 3%;
+
+       
+}
+.dashboard-icon-function {
+    font-size: 15px;                            
+    align-items: flex-start;     
+}
+
+.admin-dashboard-button:hover {
+    color: #56b3ff;          
+}
+/* .dashboard-icon-function:hover{
+    color: #56b3ff;
+} */
+
+.dashboard-title {
+    font-size: 10px;
+    color: #f1f7e596;
+    padding-bottom: 10px;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}

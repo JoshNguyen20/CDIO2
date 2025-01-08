@@ -1,0 +1,155 @@
+.about-us-container {
+  font-family: 'Roboto', sans-serif; /* Đổi font thành Roboto cho toàn bộ container */
+  background-color: #1e213d;
+  color: #000000;
+  padding: 50px 20px;
+  position: relative; 
+} 
+
+.about-us-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative; 
+  z-index: 1; 
+  background-image: url('../../../public/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.472);
+  color: #fff;
+  padding: 50px 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+.ourteam-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative; 
+  z-index: 1; 
+  background-image: url('../../../public/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.472);
+  color: #fff;
+  padding: 50px 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-us-header:hover {
+  background-color: rgba(255, 255, 255, 0); 
+}
+.ourteam-header:hover {
+  background-color: rgba(255, 255, 255, 0); 
+}
+.about-us-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(77, 63, 60, 0.852);
+  z-index: 0; 
+}
+
+.about-us-header h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.ourteam-header h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.about-us-header p {
+  font-size: 1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ourteam-header p {
+  font-size: 1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.about-us-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-section-content {
+  display: flex;
+  align-items: center;
+  width: 80%; 
+  justify-content: center; 
+  margin: auto;
+}
+
+.about-image {
+  width: 95%;
+  margin-left: auto;
+}
+
+.about-image img {
+  border-radius: 60%;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+.ourteam-image img {
+  border-radius: 50%;
+  max-width: 600px;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+.about-text {
+  width: 100%;
+  margin-right: auto;
+  color:#000000;
+}
+
+.about-text h3 {
+  font-size: 3em; 
+  margin-bottom: 20px;
+  transition: none;
+}
+
+.about-text :hover {
+  transform: none;
+}
+
+.about-text p {
+  font-size: 1em;
+  text-align: left;
+}
+
+.header__content p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.about-us-container *, 
+.about-us-container *::before, 
+.about-us-container *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+

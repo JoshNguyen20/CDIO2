@@ -45,10 +45,9 @@ const LoadingPage = () => {
     <div className="loading-container">
       <div className="loading-header">
         <Stepper currentStep={2} />
-        <h1>Sit tight, we're cooking up your plan</h1>
+        <h1>Chờ một chút, chúng tôi đang chuẩn bị kế hoạch cho bạn!</h1>
         <p>
-          Our AI is hard at work building your fully curated and customised
-          plan, so it can take a little bit of time.
+        Trí tuệ nhân tạo của chúng tôi đang làm việc chăm chỉ để xây dựng kế hoạch hoàn chỉnh và tùy chỉnh cho bạn, vì vậy có thể mất một chút thời gian.
         </p>
       </div>
       <div className="loading-days">
@@ -65,17 +64,13 @@ const LoadingPage = () => {
       </div>
       <div className="loading-footer">
         <p>
-          This page will automatically refresh when your plan is ready. Most
-          plans take between <strong>2 to 5 minutes</strong> on average to
-          finalise. It's still faster than if you were to do this manually!
+        Trang này sẽ tự động làm mới khi kế hoạch của bạn đã sẵn sàng. Hầu hết các kế hoạch mất từ <strong>2 đến 5 phút</strong> trung bình để hoàn tất. Tuy nhiên, vẫn nhanh hơn so với nếu bạn làm điều này thủ công!
         </p>
         <a href="/" className="retry-link">
-          Taking longer than 10 minutes? Restart the process.
+        Mất hơn 10 phút? Hãy khởi động lại quá trình.
         </a>
         <div className="info-box">
-          Did you know that consuming a diet high in fruits and vegetables can
-          help reduce your risk of developing chronic diseases such as heart
-          disease, stroke, and certain types of cancer?
+        Bạn có biết rằng việc tiêu thụ chế độ ăn giàu trái cây và rau củ có thể giúp giảm nguy cơ phát triển các bệnh mãn tính như bệnh tim, đột quỵ và một số loại ung thư?
         </div>
       </div>
     </div>

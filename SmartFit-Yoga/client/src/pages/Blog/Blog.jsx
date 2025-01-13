@@ -6,59 +6,59 @@ import Navbar from "../../Components/Navbar/Navbar";
 const blogPosts = [
   {
     id: 1,
-    title: "10 Tips for a Healthier Lifestyle",
-    image: "https://tagalaxyfyc.com/wp-content/uploads/2023/02/2-scaled.jpg",
-    description: "Discover practical tips to lead a healthier life starting today.",
-    date: "December 20, 2024",
+    title: "10 lời khuyên cho lối sống lành mạnh hơn",
+    image: "https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
+    description: "Khám phá những mẹo thực tế để có cuộc sống khỏe mạnh hơn bắt đầu từ hôm nay.",
+    date: "20-12-2024",
   },
   {
     id: 2,
-    title: "How to Plan Your Weekly Workouts",
-    image: "https://hdfitness.vn/wp-content/uploads/2022/02/phong-tap-gym-da-nang-4-min.jpg",
-    description: "Learn how to organize your workouts effectively for better.",
-    date: "December 18, 2024",
+    title: "Cách lên kế hoạch tập luyện hàng tuần của bạn",
+    image:"https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
+    description: "Tìm hiểu cách tổ chức các buổi tập luyện của bạn một cách hiệu quả để có sức khỏe tốt hơn.",
+    date: "18-12-2024",
   },
   {
     id: 3,
-    title: "Top 5 Nutrition Myths Busted",
+    title: "5 Hiểu lầm hàng đầu về dinh dưỡng được làm sáng tỏ",
     image: "https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
-    description: "We debunk the most common myths about nutrition and diets.",
-    date: "December 15, 2024",
+    description: "Chúng tôi vạch trần những lầm tưởng phổ biến nhất về dinh dưỡng và chế độ ăn kiêng.",
+    date: "15-12-2024",
   },
   {
     id: 4,
-    title: "Top 5 Nutrition Myths Busted",
+    title: "5 Hiểu lầm hàng đầu về dinh dưỡng được làm sáng tỏ",
     image: "https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
-    description: "We debunk the most common myths about nutrition and diets.",
-    date: "December 15, 2024",
+    description: "Chúng tôi vạch trần những lầm tưởng phổ biến nhất về dinh dưỡng và chế độ ăn kiêng.",
+    date: "15-12-2024",
   },
   {
     id: 5,
-    title: "Top 5 Nutrition Myths Busted",
+    title: "5 Hiểu lầm hàng đầu về dinh dưỡng được làm sáng tỏ",
     image: "https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
-    description: "We debunk the most common myths about nutrition and diets.",
-    date: "December 15, 2024",
+    description: "Chúng tôi vạch trần những lầm tưởng phổ biến nhất về dinh dưỡng và chế độ ăn kiêng.",
+    date: "15-12-2024",
   },
   {
     id: 6,
-    title: "Top 5 Nutrition Myths Busted",
+    title: "5 Hiểu lầm hàng đầu về dinh dưỡng được làm sáng tỏ",
     image: "https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
-    description: "We debunk the most common myths about nutrition and diets.",
-    date: "December 15, 2024",
+    description: "Chúng tôi vạch trần những lầm tưởng phổ biến nhất về dinh dưỡng và chế độ ăn kiêng.",
+    date: "15-12-2024",
   },
   {
     id: 7,
-    title: "Top 5 Nutrition Myths Busted",
+    title: "5 Hiểu lầm hàng đầu về dinh dưỡng được làm sáng tỏ",
     image: "https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
-    description: "We debunk the most common myths about nutrition and diets.",
-    date: "December 15, 2024",
+    description: "Chúng tôi vạch trần những lầm tưởng phổ biến nhất về dinh dưỡng và chế độ ăn kiêng.",
+    date: "15-12-2024",
   },
   {
     id: 8,
-    title: "Top 5 Nutrition Myths Busted",
+    title: "5 Hiểu lầm hàng đầu về dinh dưỡng được làm sáng tỏ",
     image: "https://thegrandhotram.com/wp-content/uploads/2021/11/The-Grand-Fitness-Centre-2.jpg",
-    description: "We debunk the most common myths about nutrition and diets.",
-    date: "December 15, 2024",
+    description: "Chúng tôi vạch trần những lầm tưởng phổ biến nhất về dinh dưỡng và chế độ ăn kiêng.",
+    date: "15-12-2024",
   },
 
 
@@ -69,7 +69,7 @@ const Blog = () => {
     <div>
     <Navbar/>
     <div className="workout-header">
-        <h1>Our Blog</h1>
+        <h1>Blogs</h1>
       </div>
     <div className="blog-page">
       
@@ -84,7 +84,7 @@ const Blog = () => {
               <p className="blog-description">{post.description}</p>
               <span className="blog-date">{post.date}</span>
               <a href={`/blog/${post.id}`} className="blog-read-more">
-                Read More
+                Đọc Thêm
               </a>
             </div>
           </div>

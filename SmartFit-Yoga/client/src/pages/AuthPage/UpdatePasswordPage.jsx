@@ -17,13 +17,13 @@ const UpdatePasswordPage = () => {
   return (
     <Components.Container>
       <Components.FormContainer>
-        <Components.Title>Set New Password</Components.Title>
+        <Components.Title>Đặt mật khẩu mới</Components.Title>
         <Components.Subtitle>
-          Create a strong password for your account
+        Tạo mật khẩu mạnh hơn cho tài khoản của bạn
         </Components.Subtitle>
         <form onSubmit={submitHandler}>
           <Components.ItemContainer>
-            <Components.Label htmlFor="password">New Password</Components.Label>
+            <Components.Label htmlFor="password">Mật khẩu mới </Components.Label>
             <div style={{ position: 'relative' }}>
               <Components.Input
                 id="password"
@@ -43,7 +43,7 @@ const UpdatePasswordPage = () => {
             </div>
           </Components.ItemContainer>
           <Components.ItemContainer>
-            <Components.Label htmlFor="confirmPassword">Confirm Password</Components.Label>
+            <Components.Label htmlFor="confirmPassword">Xác nhận mật khẩu </Components.Label>
             <div style={{ position: 'relative' }}>
               <Components.Input
                 id="confirmPassword"
@@ -62,9 +62,9 @@ const UpdatePasswordPage = () => {
               }} />
             </div>
           </Components.ItemContainer>
-          <Components.Button type="submit">Update Password</Components.Button>
+          <Components.Button type="submit">Cập nhật </Components.Button>
         </form>
-        <Components.Link href="/login">Back to Login</Components.Link>
+        <Components.Link href="/login">Quay về đăng nhập </Components.Link>
       </Components.FormContainer>
     </Components.Container>
   );

@@ -16,20 +16,20 @@ const ForgotPasswordPage = () => {
   return (
     <Components.Container>
       <Components.FormContainer>
-        <Components.Title>Forgot Password?</Components.Title>
+        <Components.Title>Quên Mật KhẩuKhẩu?</Components.Title>
         <Components.Subtitle>
-          Enter your email and we'll send you a 6-digit code to reset password.
+        Nhập email của bạn và chúng tôi sẽ gửi mã gồm 6 chữ số để bạn đặt lại mật khẩu.
         </Components.Subtitle>
         <form onSubmit={submitHandler}>
           <Components.ItemContainer>
-            <Components.Label htmlFor="email">Email Address</Components.Label>
+            <Components.Label htmlFor="email">Địa Chỉ Email </Components.Label>
             <div style={{ position: 'relative' }}>
               <Components.Input
                 id="email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
+                placeholder="Nhập Email của Bạn "
                 required
               />
               <FiMail style={{
@@ -41,9 +41,9 @@ const ForgotPasswordPage = () => {
               }} />
             </div>
           </Components.ItemContainer>
-          <Components.Button type="submit">Send Reset Link</Components.Button>
+          <Components.Button type="submit">Gửi liên kết đặt lại mật khẩu</Components.Button>
         </form>
-        <Components.Link href="/login">Back to Login</Components.Link>
+        <Components.Link href="/login">Quay Về Đăng Nhập </Components.Link>
       </Components.FormContainer>
     </Components.Container>
   );

@@ -27,26 +27,26 @@ const Navbar = () => {
       <div className="spacer"></div>
       <div className="navbar-links">
         <a href="/generator" className="navbar-a">
-          GENERATION PLANS
+          TẠO KẾ HOẠCH
         </a>
         <a href="/workout-plans" className="navbar-a">
-          WORKOUT PLANS
+          KẾ HOẠCH TẬP LUYỆN
         </a>
         <a href="/meal-plans" className="navbar-a">
-          NUTRITION PLANS
+        KẾ HOẠCH DINH DƯỠNG
         </a>
         <a href="/tracking" className="navbar-a">
-          PROGRESS TRACKING
+          THEO DÕI TIẾN ĐỘ
         </a>
         <a href="/about" className="navbar-a">
-          ABOUT
+          GIỚI THIỆU
         </a>
         
       </div>
       <div className="spacer"></div>
       <div className="navbar-search-container">
         <CiSearch className="fas fa-search navbar-search-icon" />
-        <input type="text" className="navbar-search" placeholder="Search..." />
+        <input type="text" className="navbar-search" placeholder="Tìm kiếm..." />
       </div>
       {/* Dropdown Notification */}
       <Notification/>

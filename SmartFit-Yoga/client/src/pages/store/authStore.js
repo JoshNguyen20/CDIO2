@@ -22,7 +22,7 @@ export const useAuthStore = create((set) => ({
 			set({ user: response.data.user, isAuthenticated: true, isLoading: false });
 			return response.data;
 		} catch (error) {
-			set({ error: error.response.data.message || "Error verifying email", isLoading: false });
+			set({ error: error.response.data.message || "Lỗi xác minh email", isLoading: false });
 			throw error;
 		}
 	},
@@ -43,7 +43,7 @@ export const useAuthStore = create((set) => ({
 		} catch (error) {
 			set({
 				isLoading: false,
-				error: error.response.data.message || "Error sending reset password email",
+				error: error.response.data.message || "Lỗi gửi email đặt lại mật khẩu",
 			});
 			throw error;
 		}
@@ -56,7 +56,7 @@ export const useAuthStore = create((set) => ({
 		} catch (error) {
 			set({
 				isLoading: false,
-				error: error.response.data.message || "Error resetting password",
+				error: error.response.data.message || "Lỗi khi đặt lại mật khẩu",
 			});
 			throw error;
 		}

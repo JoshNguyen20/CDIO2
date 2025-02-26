@@ -119,11 +119,11 @@ const GeneratorPlansPage = () => {
                         <input
                             className="generator-input"
                             type="number"
-                            name="Tuổi "
+                            name="age"
                             value={formData.age}
                             onChange={handleInputChange}
                             required
-                            placeholder="Nhập tuổi của bạn "
+                            placeholder="Nhập tuổi của bạn"
                         />
                     </div>
 
@@ -150,7 +150,7 @@ const GeneratorPlansPage = () => {
                             value={formData.weight}
                             onChange={handleInputChange}
                             required
-                            placeholder="Nhập cân nặng của bạn "
+                            placeholder="Nhập cân nặng của bạn"
                         />
                     </div>
 
@@ -163,7 +163,7 @@ const GeneratorPlansPage = () => {
                             value={formData.height}
                             onChange={handleInputChange}
                             required
-                            placeholder="Nhập chiều cao của bạn "
+                            placeholder="Nhập chiều cao của bạn"
                         />
                     </div>
 

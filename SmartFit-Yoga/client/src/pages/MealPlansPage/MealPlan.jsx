@@ -27,11 +27,8 @@ const MealPlanPage = () => {
     const fetchMealPlan = async () => {
       try {
         setLoading(true);
-
         const response = await axios.get('http://localhost:5000/api/meal-plans/my', {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+          headers: { Authorization: `Bearer ${token}` },
         });
 
         setMealPlan(response.data.weeklyMealPlan);
@@ -50,9 +47,9 @@ const MealPlanPage = () => {
       <div>
         <Navbar />
         <div className="auth-message-container">
-          <h2>Bạn cần đăng nhập để truy cập trang này.</h2>
+          <h2>You need to log in to access this page.</h2>
           <button className="navigate-button" onClick={() => navigate('/login')}>
-          Đi đến Đăng nhập
+            Go to Login
           </button>
         </div>
         <Footer />
@@ -64,18 +61,19 @@ const MealPlanPage = () => {
     <div>
       <Navbar />
       <div className='nutrition-header'>
-          <h1>KẾ HOẠCH DINH DƯỠNG </h1>
+        <h1>NUTRITION PLAN</h1>
       </div>
       <S.PageContainer>
         {loading ? (
-          <p>Đang tải ...</p>
+          <p>Loading ...</p>
         ) : error ? (
           <p style={{ color: 'red' }}>{error}</p>
         ) : (
           <S.ContentContainer>
+            {/* Sidebar showing total calories, protein, carbs, fat */}
             <S.Sidebar>
               <S.DailyDetails>
-                <S.SectionTitle>Chi tiết hàng ngày</S.SectionTitle>
+                <S.SectionTitle>Daily Details</S.SectionTitle>
                 {mealPlan.week[activeDay] && (
                   <S.NutritionGrid>
                     <S.NutritionItem bgColor="#FFE4E1">
@@ -97,8 +95,9 @@ const MealPlanPage = () => {
                   </S.NutritionGrid>
                 )}
               </S.DailyDetails>
+              {/* Select day */}
               <S.DaysOfWeek>
-                <S.SectionTitle>Các ngày trong tuần</S.SectionTitle>
+                <S.SectionTitle>Days of the Week</S.SectionTitle>
                 <S.DayList ref={dayListRef}>
                   {mealPlan.week.map((day, index) => (
                     <S.DayItem
@@ -115,40 +114,44 @@ const MealPlanPage = () => {
                 </S.DayList>
               </S.DaysOfWeek>
             </S.Sidebar>
+
+            {/* Table showing meals */}
             <S.MealsContainer>
-              {mealPlan.week[activeDay]?.meals.map((meal) => (
-                <S.MealCard key={meal._id}>
-                  <S.MealHeader>
-                    <S.MealName>{meal.title}</S.MealName>
-                    <S.MealType>{meal.type}</S.MealType>
-                  </S.MealHeader>
-                  <S.MealContent>
-                    <S.SectionTitle>Nguyên liệu</S.SectionTitle>
-                    <S.IngredientsList>
-                      {meal.ingredients.map((ingredient, idx) => (
-                        <S.IngredientItem key={idx}>{ingredient}</S.IngredientItem>
-                      ))}
-                    </S.IngredientsList>
-                    <S.NutritionInfo>
-                      <S.NutritionItem bgColor="#FFE4E1">
-                        {meal.calories} Calories
-                      </S.NutritionItem>
-                      <S.NutritionItem bgColor="#E6E6FA">
-                        {meal.macros.protein}g Protein
-                      </S.NutritionItem>
-                      <S.NutritionItem bgColor="#E0FFF0">
-                        {meal.macros.carbs}g Carbs
-                      </S.NutritionItem>
-                      <S.NutritionItem bgColor="#FFFACD">
-                        {meal.macros.fat}g Fat
-                      </S.NutritionItem>
-                    </S.NutritionInfo>
-                    <S.RecipeLink>
-                       <a href={meal.recipe}> {meal.recipe}</a>
-                    </S.RecipeLink>
-                  </S.MealContent>
-                </S.MealCard>
-              ))}
+              <S.MealsTable>
+                <S.TableRow>
+                  <S.MealTypeHeader>Meal</S.MealTypeHeader>
+                  <S.MealTypeHeader>Dish Name</S.MealTypeHeader>
+                  <S.MealTypeHeader>Calories</S.MealTypeHeader>
+                  <S.MealTypeHeader>Protein</S.MealTypeHeader>
+                  <S.MealTypeHeader>Carbs</S.MealTypeHeader>
+                  <S.MealTypeHeader>Fat</S.MealTypeHeader>
+                  <S.MealTypeHeader>Ingredients</S.MealTypeHeader>
+                  <S.MealTypeHeader>Recipe</S.MealTypeHeader>
+                </S.TableRow>
+
+                {mealPlan.week[activeDay]?.meals.map((meal) => (
+                  <S.TableRow key={meal._id}>
+                    <S.TableCell>{meal.type}</S.TableCell>
+                    <S.TableCell>{meal.title}</S.TableCell>
+                    <S.TableCell>{meal.calories}</S.TableCell>
+                    <S.TableCell>{meal.macros.protein}g</S.TableCell>
+                    <S.TableCell>{meal.macros.carbs}g</S.TableCell>
+                    <S.TableCell>{meal.macros.fat}g</S.TableCell>
+                    <S.TableCell>
+                      <ul>
+                        {meal.ingredients.map((ingredient, idx) => (
+                          <li key={idx}>{ingredient}</li>
+                        ))}
+                      </ul>
+                    </S.TableCell>
+                    <S.TableCell>
+                      <a href={meal.recipe} target="_blank" rel="noopener noreferrer">
+                        View Recipe
+                      </a>
+                    </S.TableCell>
+                  </S.TableRow>
+                ))}
+              </S.MealsTable>
             </S.MealsContainer>
           </S.ContentContainer>
         )}

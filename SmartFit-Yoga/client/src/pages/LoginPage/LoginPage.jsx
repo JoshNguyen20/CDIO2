@@ -36,11 +36,11 @@ const LoginPage = () => {
         try {
             const response = await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
             if (response.status === 201) {
-                toast.success("Tài khoản đã được tạo thành công!");
-                toggle(true); // Chuyển sang giao diện Sign In sau khi đăng ký thành công
+                toast.success("Account created successfully!");
+                toggle(true); // Switch to Sign In interface after successful registration
             }
         } catch (error) {
-            toast.error(error.response?.data?.message || "Đăng ký không thành công. Vui lòng thử lại.");
+            toast.error(error.response?.data?.message || "Registration failed. Please try again.");
         }
     };
 
@@ -57,12 +57,12 @@ const LoginPage = () => {
 
             toast.success("Login successful!");
             if (user.role === 'Admin') {
-                navigate('/admin-dashboard'); // Chuyển hướng đến trang quản trị
+                navigate('/admin-dashboard'); // Redirect to admin dashboard
             } else {
-                navigate('/home'); // Chuyển hướng đến trang chính
+                navigate('/home'); // Redirect to home page
             }
         } catch (error) {
-            toast.error("Đăng nhập không thành công. Vui lòng kiểm tra thông tin đăng nhập của bạn.");
+            toast.error("Login failed. Please check your login information.");
         }
     };
 
@@ -81,45 +81,45 @@ const LoginPage = () => {
                 {/* Sign Up Container */}
                 <Components.SignUpContainer signinIn={signIn}>
                     <Components.Form onSubmit={handleSubmit}>
-                        <Components.Title1>TẠO TÀI KHOẢN </Components.Title1>
+                        <Components.Title1>CREATE ACCOUNT</Components.Title1>
                         <Components.SocialButtons>
                             <Components.SocialButton><FaGooglePlusG /></Components.SocialButton>
                             <Components.SocialButton><FaFacebookF /></Components.SocialButton>
                             <Components.SocialButton><FaXTwitter /></Components.SocialButton>
                         </Components.SocialButtons>
-                        <Components.Retitle href='#'>hoặc sử dụng Số điện thoại/Email của bạn để đăng ký</Components.Retitle>
+                        <Components.Retitle href='#'>or use your phone number/Email to register</Components.Retitle>
                         <Components.Input
                             type='text'
-                            placeholder='Tên'
+                            placeholder='Name'
                             name='name'
                             onChange={handleInputChange}
                         />
                         <Components.Input
                             type='email'
-                            placeholder='Số điện thoại hoặc Email'
+                            placeholder='Phone number or Email'
                             name='email'
                             onChange={handleInputChange}
                         />
                         <Components.Input
                             type='password'
-                            placeholder='Mật khẩu'
+                            placeholder='Password'
                             name='password'
                             onChange={handleInputChange}
                         />
-                        <Components.Button type="submit">ĐĂNG KÝ </Components.Button>
+                        <Components.Button type="submit">SIGN UP</Components.Button>
                     </Components.Form>
                 </Components.SignUpContainer>
 
                 {/* Sign In Container */}
                 <Components.SignInContainer signinIn={signIn}>
                     <Components.Form onSubmit={handleSubmit}>
-                        <Components.Title1>ĐĂNG NHẬP </Components.Title1>
+                        <Components.Title1>SIGN IN</Components.Title1>
                         <Components.SocialButtons>
                             <Components.SocialButton><FaGooglePlusG /></Components.SocialButton>
                             <Components.SocialButton><FaFacebookF /></Components.SocialButton>
                             <Components.SocialButton><FaXTwitter /></Components.SocialButton>
                         </Components.SocialButtons>
-                        <Components.Retitle href='#'>hoặc sử dụng Số điện thoại/Email và mật khẩu của bạn</Components.Retitle>
+                        <Components.Retitle href='#'>or use your phone number/Email and password</Components.Retitle>
                         <Components.Input
                             type='email'
                             placeholder='Email'
@@ -128,12 +128,12 @@ const LoginPage = () => {
                         />
                         <Components.Input
                             type='password'
-                            placeholder='Mật khẩu '
+                            placeholder='Password'
                             name='password'
                             onChange={handleInputChange}
                         />
-                        <Components.Anchor href='/forgot-password'>Quên mật khẩu ?</Components.Anchor>
-                        <Components.Button type="submit">ĐĂNG NHẬP </Components.Button>
+                        <Components.Anchor href='/forgot-password'>Forgot password?</Components.Anchor>
+                        <Components.Button type="submit">SIGN IN</Components.Button>
                     </Components.Form>
                 </Components.SignInContainer>
 
@@ -141,14 +141,14 @@ const LoginPage = () => {
                 <Components.OverlayContainer signinIn={signIn}>
                     <Components.Overlay signinIn={signIn}>
                         <Components.LeftOverlayPanel signinIn={signIn}>
-                            <Components.Title2>Chào mừng bạn trở lại!</Components.Title2>
-                            <Components.Paragraph>Nhập thông tin cá nhân của bạn để sử dụng tất cả tính năng của trang web</Components.Paragraph>
-                            <Components.GhostButton onClick={() => toggle(true)}>ĐĂNG NHẬP </Components.GhostButton>
+                            <Components.Title2>Welcome back!</Components.Title2>
+                            <Components.Paragraph>Enter your personal details to use all the features of the website</Components.Paragraph>
+                            <Components.GhostButton onClick={() => toggle(true)}>SIGN IN</Components.GhostButton>
                         </Components.LeftOverlayPanel>
                         <Components.RightOverlayPanel signinIn={signIn}>
-                            <Components.Title2>Chào bạn!</Components.Title2>
-                            <Components.Paragraph>Đăng ký để sử dụng tất cả tính năng của trang web</Components.Paragraph>
-                            <Components.GhostButton onClick={() => toggle(false)}>Đăng ký </Components.GhostButton>
+                            <Components.Title2>Hello!</Components.Title2>
+                            <Components.Paragraph>Register to use all the features of the website</Components.Paragraph>
+                            <Components.GhostButton onClick={() => toggle(false)}>Sign Up</Components.GhostButton>
                         </Components.RightOverlayPanel>
                     </Components.Overlay>
                 </Components.OverlayContainer>

@@ -8,21 +8,21 @@ const Notification = () => {
   const [showNotifications, setShowNotifications] = useState(false);
   const [notifications] = useState([
     {
-      message: "Bạn đã hoàn thành bài tập luyện hôm nay!",
+      message: "You have completed today's workout!",
       from: "System",
-      time: "2 phút trước",
+      time: "2 minutes ago",
       read: false,
     },
     {
-      message: "Kế hoạch bữa ăn mới đã sẵn sàng.",
+      message: "New meal plan is ready.",
       from: "Admin",
-      time: "1 giờ trước ",
+      time: "1 hour ago",
       read: true,
     },
     {
-      message: "Kiểm tra bài đăng mới nhất.",
+      message: "Check out the latest post.",
       from: "System",
-      time: "Hôm qua ",
+      time: "Yesterday",
       read: false,
     },
   ]);
@@ -37,7 +37,7 @@ const Notification = () => {
   };
 
   const handleMarkAllRead = () => {
-    // Logic đánh dấu tất cả là đã đọc (nếu có backend hoặc state)
+    // Logic to mark all as read (if backend or state is available)
     console.log("Mark all notifications as read");
   };
 
@@ -54,9 +54,9 @@ const Notification = () => {
         <div className="notification-dropdown">
           {/* Header */}
           <div className="notification-header">
-            <span>THÔNG BÁO </span>
+            <span>NOTIFICATIONS</span>
             <button onClick={handleMarkAllRead} className="mark-read-btn">
-              ĐỌC TẤT CẢ 
+              MARK ALL AS READ
             </button>
           </div>
 
@@ -80,7 +80,7 @@ const Notification = () => {
                 </div>
               ))
             ) : (
-              <div className="notification-empty">KHÔNG CÓ THÔNG BÁO MỚI </div>
+              <div className="notification-empty">NO NEW NOTIFICATIONS</div>
             )}
           </div>
         </div>

@@ -45,9 +45,9 @@ const LoadingPage = () => {
     <div className="loading-container">
       <div className="loading-header">
         <Stepper currentStep={2} />
-        <h1>Chờ một chút, chúng tôi đang chuẩn bị kế hoạch cho bạn!</h1>
+        <h1>Please wait a moment, we are preparing a plan for you!</h1>
         <p>
-        Trí tuệ nhân tạo của chúng tôi đang làm việc chăm chỉ để xây dựng kế hoạch hoàn chỉnh và tùy chỉnh cho bạn, vì vậy có thể mất một chút thời gian.
+          Our artificial intelligence is working hard to build a complete and customized plan for you, so it may take some time.
         </p>
       </div>
       <div className="loading-days">
@@ -64,13 +64,13 @@ const LoadingPage = () => {
       </div>
       <div className="loading-footer">
         <p>
-        Trang này sẽ tự động làm mới khi kế hoạch của bạn đã sẵn sàng. Hầu hết các kế hoạch mất từ <strong>2 đến 5 phút</strong> trung bình để hoàn tất. Tuy nhiên, vẫn nhanh hơn so với nếu bạn làm điều này thủ công!
+          This page will automatically refresh when your plan is ready. Most plans take an average of <strong>2 to 5 minutes</strong> to complete. However, it is still faster than if you did it manually!
         </p>
         <a href="/" className="retry-link">
-        Mất hơn 10 phút? Hãy khởi động lại quá trình.
+          Taking more than 10 minutes? Restart the process.
         </a>
         <div className="info-box">
-        Bạn có biết rằng việc tiêu thụ chế độ ăn giàu trái cây và rau củ có thể giúp giảm nguy cơ phát triển các bệnh mãn tính như bệnh tim, đột quỵ và một số loại ung thư?
+          Did you know that consuming a diet rich in fruits and vegetables can help reduce the risk of developing chronic diseases such as heart disease, stroke, and some types of cancer?
         </div>
       </div>
     </div>

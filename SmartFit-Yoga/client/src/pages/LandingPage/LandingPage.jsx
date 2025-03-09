@@ -9,14 +9,14 @@ const LandingPage = () => {
         <Components.Header>
           <Components.Title>SmartFit & Yoga</Components.Title>
           <Components.Subtitle>
-          Hệ thống huấn luyện thể dục và yoga cá nhân hóa dựa trên trí tuệ nhân tạo
+          A personalized fitness and yoga training system based on artificial intelligence
           </Components.Subtitle>
           <Components.StartButton onClick={() => window.location.href = '/login'}>
-          Bắt đầu Dùng Thử Miễn Phí
+          Start Free Trial
           </Components.StartButton>
         </Components.Header>
         <Components.Footer>
-          <Components.FooterText>Được tin tưởng bởi các yogis và các phòng tập trên toàn thế giới.</Components.FooterText>
+          <Components.FooterText>Trusted by yogis and gyms around the world.</Components.FooterText>
         </Components.Footer>
       </Components.Container>
     </Components.Background>

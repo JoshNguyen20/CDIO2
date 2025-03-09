@@ -36,7 +36,6 @@ const UserProfilePage = () => {
           role: data.role,
           created_at: new Date(data.createdAt).toLocaleString(),
           updated_at: new Date(data.updatedAt).toLocaleString(),
-          //gender: "Not specified", // Default value, can be updated
           age: 0,
           weight: 0,
           height: 0,
@@ -53,10 +52,6 @@ const UserProfilePage = () => {
 
     fetchUserData();
   }, []);
-
-  // const handleEdit = () => {
-  //   setIsModalOpen(true);
-  // };
 
   const handleSave = () => {
     setUser({ ...formData, updated_at: new Date().toLocaleString() });
@@ -79,18 +74,18 @@ const UserProfilePage = () => {
   };
 
   if (loading) {
-    return <div>Đang tải...</div>;
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return <div>Lỗi: {error}</div>;
+    return <div>Error: {error}</div>;
   }
 
   return (
     <div>
       <Navbar />
       <div className="workout-header">
-        <h1>Thông Tin</h1>
+        <h1>Profile Information</h1>
       </div>
       <div className="profile-container">
         <div className="profile-card">
@@ -102,29 +97,23 @@ const UserProfilePage = () => {
             />
           </div>
           <p>
-            <strong>Tên :</strong> {user.name}
+            <strong>Name:</strong> {user.name}
           </p>
-          {/* <p>
-            <strong>Gender:</strong> {user.gender}
-          </p> */}
           <p>
             <strong>Email:</strong> {user.email}
           </p>
           <p>
-            <strong>Vị trí :</strong> {user.role}
+            <strong>Role:</strong> {user.role}
           </p>
           <p>
-            <strong>Ngày tạo:</strong> {user.created_at}
+            <strong>Created At:</strong> {user.created_at}
           </p>
           <p>
-            <strong>Ngày cập nhật:</strong> {user.updated_at}
+            <strong>Updated At:</strong> {user.updated_at}
           </p>
           <div className="buttonstyle">
-            {/* <button className="edit-btn" onClick={handleEdit}>
-              Edit
-            </button> */}
             <button className="logout-btn" onClick={handleLogout}>
-              Đăng Xuất 
+              Logout
             </button>
           </div>
         </div>
@@ -133,7 +122,7 @@ const UserProfilePage = () => {
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)}>
           <div className="profile-field">
-            <label>Tên:</label>
+            <label>Name:</label>
             <input
               type="text"
               name="name"
@@ -142,10 +131,10 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Giới tính:</label>
+            <label>Gender:</label>
             <select name="gender" value={formData.gender} onChange={handleChange}>
-              <option value="male">Nam </option>
-              <option value="female">Nữ </option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
             </select>
           </div>
           <div className="profile-field">
@@ -158,7 +147,7 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Tuổi :</label>
+            <label>Age:</label>
             <input
               type="number"
               name="age"
@@ -167,7 +156,7 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Cân Nặng :</label>
+            <label>Weight:</label>
             <input
               type="number"
               name="weight"
@@ -176,7 +165,7 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Chiều Cao :</label>
+            <label>Height:</label>
             <input
               type="number"
               name="height"
@@ -186,10 +175,10 @@ const UserProfilePage = () => {
           </div>
           <div className="profile-buttons">
             <button className="save-btn" onClick={handleSave}>
-              Lưu 
+              Save
             </button>
             <button className="cancel-btn" onClick={handleCancel}>
-              Hủy 
+              Cancel
             </button>
           </div>
         </Modal>

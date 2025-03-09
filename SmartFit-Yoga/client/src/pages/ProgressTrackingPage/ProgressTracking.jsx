@@ -66,7 +66,7 @@ const ProgressTracking = () => {
         setPastWorkouts(past);
         setCurrentWorkouts(current);
       } catch (err) {
-        console.error('Lỗi khi lấy kế hoạch tập luyện:', err);
+        console.error('Error fetching workout plan:', err);
         setError(err.response?.data?.message || err.message);
       } finally {
         setLoading(false);
@@ -77,10 +77,10 @@ const ProgressTracking = () => {
   }, []);
 
   const weeklyWeightData = {
-    labels: ['Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy', 'Chủ Nhật'],
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [
       {
-        label: 'Tiến độ Cân Nặng (kg)',
+        label: 'Weight Progress (kg)',
         data: [70.5, 70.3, 70.0, 69.8, 69.5, 69.2, 69.0],
         borderColor: '#4CAF50',
         backgroundColor: 'rgba(76, 175, 80, 0.2)',
@@ -95,9 +95,9 @@ const ProgressTracking = () => {
       <div>
         <Navbar />
         <div className="auth-message-container">
-          <h2>Bạn cần đăng nhập để truy cập trang này.</h2>
+          <h2>You need to log in to access this page.</h2>
           <button className="navigate-button" onClick={() => navigate('/login')}>
-          Đi đến Đăng nhập
+            Go to Login
           </button>
         </div>
         <Footer />
@@ -109,37 +109,37 @@ const ProgressTracking = () => {
     <div>
       <Navbar />
       <header className="workout-header">
-        <h1>Theo dõi tiến độ</h1>
+        <h1>Progress Tracking</h1>
       </header>
       <div className="progress-tracking-container">
         <section className="overview-section">
           <div className="progress-card">
-            <h3>Calorie đã đốt cháy</h3>
+            <h3>Calories Burned</h3>
             <p>1850 kcal</p>
           </div>
           <div className="progress-card">
-            <h3>Tổng thời gian tập luyện</h3>
-            <p>5 giờ 20 phút  </p>
+            <h3>Total Workout Time</h3>
+            <p>5 hours 20 minutes</p>
           </div>
           <div className="progress-card">
-            <h3>Cân nặng hiện tại</h3>
+            <h3>Current Weight</h3>
             <p>69 kg</p>
           </div>
           <div className="progress-card">
-            <h3>Cân nặng mục tiêu</h3>
+            <h3>Target Weight</h3>
             <p>65 kg</p>
           </div>
         </section>
 
         <section className="chart-section">
-          <h2>Tiến độ hàng tuần</h2>
+          <h2>Weekly Progress</h2>
           <Line data={weeklyWeightData} />
         </section>
 
         <section className="history-section">
-          <h2>Lịch sử hoạt động</h2>
+          <h2>Activity History</h2>
           {loading ? (
-            <p>Đang tải...</p>
+            <p>Loading...</p>
           ) : error ? (
             <p style={{ color: 'red' }}>{error}</p>
           ) : pastWorkouts.length > 0 ? (
@@ -148,31 +148,31 @@ const ProgressTracking = () => {
                 <h4>{day.day}</h4>
                 {day.workouts.map((workout, idx) => (
                   <p key={idx}>
-                    {workout.title} - {workout.duration} phút 
+                    {workout.title} - {workout.duration} minutes
                   </p>
                 ))}
               </div>
             ))
           ) : (
-            <p>Lịch sử hoạt động.</p>
+            <p>No activity history.</p>
           )}
         </section>
 
         <section className="current-section">
-          <h2>Bài tập hôm nay</h2>
+          <h2>Today's Workouts</h2>
           {currentWorkouts.length > 0 ? (
             currentWorkouts.map((day, index) => (
               <div key={index} className="history-card">
                 <h4>{day.day}</h4>
                 {day.workouts.map((workout, idx) => (
                   <p key={idx}>
-                    {workout.title} - {workout.duration} phútphút
+                    {workout.title} - {workout.duration} minutes
                   </p>
                 ))}
               </div>
             ))
           ) : (
-            <p>Không có bài tập cho hôm nay.</p>
+            <p>No workouts for today.</p>
           )}
         </section>
       </div>

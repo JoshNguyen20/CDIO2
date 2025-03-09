@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterest } from 'react-icons/fa';
 
 const Footer = () => {
-  const navigate = useNavigate(); // Hook dùng để điều hướng
+  const navigate = useNavigate(); // Hook used for navigation
 
   const currentYear = new Date().getFullYear();
 
@@ -16,28 +16,28 @@ const Footer = () => {
             <img src={'/logo.png'} alt="logo" className="footer-logo-img" />
           </h1>
           <p className="faded-text">Build Your Body™</p>
-          <p className="faded-text small-text">Người bạn đồng hành thể hình lý tưởng của bạn với các kế hoạch tập luyện và dinh dưỡng được cá nhân hóa.</p>
+          <p className="faded-text small-text">Your ideal fitness companion with personalized workout and nutrition plans.</p>
         </div>
         <div className="footer-section">
-          <h3>CHƯƠNG TRÌNH </h3>
-          <p className="footer-effect" onClick={() => navigate('/workout-plans')}>Kế Hoạch Tập Luyện </p>
-          <p className="footer-effect" onClick={() => navigate('/meal-plans')}>Kế hoạch dinh dưỡng </p>
-          <p className="footer-effect" onClick={() => navigate('/tracking')}>Theo Dõi </p>
+          <h3>PROGRAMS</h3>
+          <p className="footer-effect" onClick={() => navigate('/workout-plans')}>Workout Plans</p>
+          <p className="footer-effect" onClick={() => navigate('/meal-plans')}>Meal Plans</p>
+          <p className="footer-effect" onClick={() => navigate('/tracking')}>Tracking</p>
         </div>
         <div className="footer-section">
-          <h3>KHÁM PHÁ </h3>
-          <p className="footer-effect" onClick={() => navigate('/blogs')}> Blogs</p>
-          <p className="footer-effect" onClick={() => navigate('/tools')}>Công Cụ Tính Toán Tỉ Lệ Cơ Thể </p>
+          <h3>EXPLORE</h3>
+          <p className="footer-effect" onClick={() => navigate('/blogs')}>Blogs</p>
+          <p className="footer-effect" onClick={() => navigate('/tools')}>Body Ratio Calculator Tools</p>
         </div>
         <div className="footer-section">
-          <h3>GIỚI THIỆU </h3>
-          <p className="footer-effect" onClick={() => navigate('/about')}>Chúng tôi là ai </p>
-          <p className="footer-effect" onClick={() => navigate('/about')}> Hướng Dẫn </p>
-          <p className="footer-effect" onClick={() => navigate('/our-team')}>Thành Viên </p>
+          <h3>ABOUT</h3>
+          <p className="footer-effect" onClick={() => navigate('/about')}>Who We Are</p>
+          <p className="footer-effect" onClick={() => navigate('/about')}>Guides</p>
+          <p className="footer-effect" onClick={() => navigate('/our-team')}>Team Members</p>
         </div>
-        <div className="footer-section ">
+        <div className="footer-section">
           <div className="contact">
-            <h3>LIÊN HỆ </h3>
+            <h3>CONTACT</h3>
             <p className="footer-effect">Phone: +123 456 7890</p>
             <p className="footer-effect">Email: info@example.com</p>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <hr className="footer-separator" />
-        <p className="faded-text">&copy; {currentYear} SmartFit & Yoga. Tất cả các quyền được bảo lưu. <a href="https://example.com" aria-label="Terms of Use">Điều khoản sử dụng</a> <a href="https://example.com" aria-label="Privacy Policy">Chính sách bảo mật</a></p>
+        <p className="faded-text">&copy; {currentYear} SmartFit & Yoga. All rights reserved. <a href="https://example.com" aria-label="Terms of Use">Terms of Use</a> <a href="https://example.com" aria-label="Privacy Policy">Privacy Policy</a></p>
         <div className="social-links">
           <a href="/home" aria-label="YouTube"><FaYoutube /></a>
           <a href="/home" aria-label="Pinterest"><FaPinterest /></a>

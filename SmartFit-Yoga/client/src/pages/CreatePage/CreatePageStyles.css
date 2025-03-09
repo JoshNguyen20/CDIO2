@@ -102,7 +102,7 @@ textarea {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color: #007bff;
+  background: linear-gradient(90deg,rgb(102, 162, 226), #007bff);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -110,7 +110,7 @@ textarea {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(90deg,rgb(102, 162, 226), #007bff);
 }
 
 @media screen and (min-width: 768px) {

@@ -6,20 +6,20 @@ import { IoLogoWechat } from "react-icons/io5";
 
 const ChatBot = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const [messages, setMessages] = useState([]); // Lưu trữ danh sách tin nhắn
-  const [inputValue, setInputValue] = useState(""); // Lưu trữ nội dung tin nhắn đang nhập
-  const [hasGreeted, setHasGreeted] = useState(false); // Theo dõi xem chatbot đã gửi lời chào chưa
+  const [messages, setMessages] = useState([]); // Store the list of messages
+  const [inputValue, setInputValue] = useState(""); // Store the content of the message being typed
+  const [hasGreeted, setHasGreeted] = useState(false); // Track whether the chatbot has sent a greeting
 
-  // Hàm toggle trạng thái mở/đóng chat
+  // Function to toggle the chat open/close state
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
   };
 
-  // Gửi lời chào khi mở chatbot lần đầu
+  // Send a greeting when the chatbot is opened for the first time
   useEffect(() => {
     if (isChatOpen && !hasGreeted) {
       const greetMessage = {
-        text: "Xin chào! Tôi có thể hỗ trợ bạn điều gì trong hôm nay?",
+        text: "Hello! How can I assist you today?",
         sender: "bot",
         time: new Date().toLocaleTimeString("en-US", {
           hour: "2-digit",
@@ -32,7 +32,7 @@ const ChatBot = () => {
     }
   }, [isChatOpen, hasGreeted]);
 
-  // Hàm gọi API để gửi tin nhắn và nhận phản hồi
+  // Function to call the API to send a message and receive a response
   const callAPI = async (userInput) => {
     try {
       const response = await fetch("http://127.0.0.1:8000/chat", {
@@ -44,18 +44,18 @@ const ChatBot = () => {
       });
       const data = await response.json();
       if (response.ok) {
-        return data.response; // Trả về phản hồi từ chatbot
+        return data.response; // Return the chatbot's response
       } else {
         console.error(data.error);
-        return "Xin lỗi, đã xảy ra sự cố.";
+        return "Sorry, an error occurred.";
       }
     } catch (error) {
       console.error("Error calling chatbot API:", error);
-      return "Không thể kết nối với máy chủ chatbot.";
+      return "Unable to connect to the chatbot server.";
     }
   };
 
-  // Hàm xử lý khi gửi tin nhắn
+  // Function to handle sending a message
   const sendMessage = async () => {
     if (inputValue.trim() !== "") {
       const formatTime = () => {
@@ -85,7 +85,7 @@ const ChatBot = () => {
     }
   };
 
-  // Hàm xử lý nhấn phím Enter
+  // Function to handle pressing the Enter key
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       sendMessage();
@@ -94,18 +94,18 @@ const ChatBot = () => {
 
   return (
     <div className="chatbot">
-      {/* Biểu tượng chatbot */}
+      {/* Chatbot icon */}
       <div className="messengerIcon" onClick={toggleChat}>
         <IoLogoWechat size={50} color="#0099FF" />
       </div>
 
-      {/* Cửa sổ chat */}
+      {/* Chat window */}
       <div className={`chatBox ${isChatOpen ? 'open' : ''}`}>
         <div className="chatHeader">
           <h className="headerText">
             <RiRobot3Fill />
           </h>
-          <span className="headTitle">Hỗ trợ</span>
+          <span className="headTitle">Support</span>
           <button onClick={toggleChat}>
             <FaMinus />
           </button>
@@ -124,7 +124,7 @@ const ChatBot = () => {
         <div className="chatFooter">
           <input
             type="text"
-            placeholder="Nhập câu hỏi của bạn..."
+            placeholder="Type your question..."
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyPress}

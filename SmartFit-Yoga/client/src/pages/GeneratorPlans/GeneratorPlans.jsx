@@ -17,14 +17,14 @@ const GeneratorPlansPage = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
-    const [authenticated, setAuthenticated] = useState(true); // State để kiểm tra xác thực
+    const [authenticated, setAuthenticated] = useState(true); // State to check authentication
     const navigate = useNavigate();
 
-    // Kiểm tra token để xác thực
+    // Check token for authentication
     useEffect(() => {
         const token = localStorage.getItem("token");
         if (!token) {
-            setAuthenticated(false); // Người dùng chưa đăng nhập
+            setAuthenticated(false); // User is not logged in
         }
     }, []);
 
@@ -43,7 +43,7 @@ const GeneratorPlansPage = () => {
             const token = localStorage.getItem("token");
 
             if (!token) {
-                throw new Error("Thiếu mã thông báo. Vui lòng đăng nhập.");
+                throw new Error("Missing token. Please log in.");
             }
 
             const mealPlanPayload = {
@@ -83,22 +83,22 @@ const GeneratorPlansPage = () => {
         } catch (err) {
             const errorMessage = err.response
                 ? err.response.data.error || JSON.stringify(err.response.data)
-                : err.message || "Đã xảy ra lỗi.";
+                : err.message || "An error occurred.";
             setError(errorMessage);
         } finally {
             setLoading(false);
         }
     };
 
-    // Nếu chưa đăng nhập, hiển thị thông báo và chuyển hướng
+    // If not logged in, display message and redirect
     if (!authenticated) {
         return (
             <div>
                 <Navbar />
                 <div className="auth-message-container">
-                    <h2>Bạn cần đăng nhập để truy cập trang này.</h2>
+                    <h2>You need to log in to access this page.</h2>
                     <button className="navigate-button" onClick={() => navigate("/login")}>
-                    Đi đến trang Đăng nhập
+                        Go to Login Page
                     </button>
                 </div>
                 <Footer />
@@ -110,12 +110,12 @@ const GeneratorPlansPage = () => {
         <div>
             <Navbar />
             <div className="workout-header">
-                <h1>TẠO KẾ HOẠCH CỦA BẠN</h1>
+                <h1>CREATE YOUR PLAN</h1>
             </div>
             <div className="generator-container">
                 <form className="generator-form" onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label className="generator-label">Tuổi:</label>
+                        <label className="generator-label">Age:</label>
                         <input
                             className="generator-input"
                             type="number"
@@ -123,12 +123,12 @@ const GeneratorPlansPage = () => {
                             value={formData.age}
                             onChange={handleInputChange}
                             required
-                            placeholder="Nhập tuổi của bạn"
+                            placeholder="Enter your age"
                         />
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Giới tính:</label>
+                        <label className="generator-label">Gender:</label>
                         <select
                             className="generator-select"
                             name="gender"
@@ -136,13 +136,13 @@ const GeneratorPlansPage = () => {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="1">Nam</option>
-                            <option value="2">Nữ</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
                         </select>
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Cân nặng (kg):</label>
+                        <label className="generator-label">Weight (kg):</label>
                         <input
                             className="generator-input"
                             type="number"
@@ -150,12 +150,12 @@ const GeneratorPlansPage = () => {
                             value={formData.weight}
                             onChange={handleInputChange}
                             required
-                            placeholder="Nhập cân nặng của bạn"
+                            placeholder="Enter your weight"
                         />
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Chiều Cao (cm):</label>
+                        <label className="generator-label">Height (cm):</label>
                         <input
                             className="generator-input"
                             type="number"
@@ -163,12 +163,12 @@ const GeneratorPlansPage = () => {
                             value={formData.height}
                             onChange={handleInputChange}
                             required
-                            placeholder="Nhập chiều cao của bạn"
+                            placeholder="Enter your height"
                         />
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Mục Tiêu:</label>
+                        <label className="generator-label">Goal:</label>
                         <select
                             className="generator-select"
                             name="goal"
@@ -176,14 +176,14 @@ const GeneratorPlansPage = () => {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="Build Muscle">Tăng cơ</option>
-                            <option value="Lose Weight">Giảm cân</option>
-                            <option value="Maintain Weight">Duy trì cân nặng</option>
+                            <option value="Build Muscle">Build Muscle</option>
+                            <option value="Lose Weight">Lose Weight</option>
+                            <option value="Maintain Weight">Maintain Weight</option>
                         </select>
                     </div>
 
                     <button type="submit" className="submit-button" disabled={loading}>
-                        {loading ? "Generating..." : "Tạo Kế Hoạch"}
+                        {loading ? "Generating..." : "Create Plan"}
                     </button>
                 </form>
 
@@ -196,20 +196,20 @@ const GeneratorPlansPage = () => {
                 {success && (
                     <div className="success-overlay">
                         <div className="success-box">
-                            <h2>Thành công!</h2>
-                            <p>Kế hoạch của bạn đã được tạo thành công.</p>
+                            <h2>Success!</h2>
+                            <p>Your plan has been successfully created.</p>
                             <div className="button-group">
                                 <button
                                     className="navigate-button"
                                     onClick={() => navigate("/workout-plans")}
                                 >
-                                    Đi đến Kế Hoạch Tập Luyện
+                                    Go to Workout Plans
                                 </button>
                                 <button
                                     className="navigate-button"
                                     onClick={() => navigate("/meal-plans")}
                                 >
-                                    Đi đến Kế Hoạch Dinh Dưỡng
+                                    Go to Meal Plans
                                 </button>
                             </div>
                         </div>

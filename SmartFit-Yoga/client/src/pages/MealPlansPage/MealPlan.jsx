@@ -50,9 +50,9 @@ const MealPlanPage = () => {
       <div>
         <Navbar />
         <div className="auth-message-container">
-          <h2>You need to log in to access this page.</h2>
+          <h2>Bạn cần đăng nhập để truy cập trang này.</h2>
           <button className="navigate-button" onClick={() => navigate('/login')}>
-            Go to Login
+          Đi đến Đăng nhập
           </button>
         </div>
         <Footer />
@@ -64,18 +64,18 @@ const MealPlanPage = () => {
     <div>
       <Navbar />
       <div className='nutrition-header'>
-          <h1>NUTRITION PLAN</h1>
+          <h1>KẾ HOẠCH DINH DƯỠNG </h1>
       </div>
       <S.PageContainer>
         {loading ? (
-          <p>Loading...</p>
+          <p>Đang tải ...</p>
         ) : error ? (
           <p style={{ color: 'red' }}>{error}</p>
         ) : (
           <S.ContentContainer>
             <S.Sidebar>
               <S.DailyDetails>
-                <S.SectionTitle>The daily details</S.SectionTitle>
+                <S.SectionTitle>Chi tiết hàng ngày</S.SectionTitle>
                 {mealPlan.week[activeDay] && (
                   <S.NutritionGrid>
                     <S.NutritionItem bgColor="#FFE4E1">
@@ -98,7 +98,7 @@ const MealPlanPage = () => {
                 )}
               </S.DailyDetails>
               <S.DaysOfWeek>
-                <S.SectionTitle>Days of the week</S.SectionTitle>
+                <S.SectionTitle>Các ngày trong tuần</S.SectionTitle>
                 <S.DayList ref={dayListRef}>
                   {mealPlan.week.map((day, index) => (
                     <S.DayItem
@@ -123,7 +123,7 @@ const MealPlanPage = () => {
                     <S.MealType>{meal.type}</S.MealType>
                   </S.MealHeader>
                   <S.MealContent>
-                    <S.SectionTitle>Ingredients</S.SectionTitle>
+                    <S.SectionTitle>Nguyên liệu</S.SectionTitle>
                     <S.IngredientsList>
                       {meal.ingredients.map((ingredient, idx) => (
                         <S.IngredientItem key={idx}>{ingredient}</S.IngredientItem>

@@ -8,12 +8,10 @@ const AboutUs = () => {
     <div>
       <Navbar />
       <section className="about-us-header" >
-        <h2>About US</h2>
-        <p className="header__content">It is very important for the customer to pay attention to the adipiscing process.
-         Providence to assume the whole exercise of praise is, to some, rejected by the consequences of accusers, 
-         and no one follows the pain more harshly. Because to us some of the flatteries of repudiation, 
-         whence the pains they are to be nothing but the least, and that very thing. I will explain to you that 
-         there are no difficulties in understanding the right distinction of the mind.</p>
+        <h2>GIỚI THIỆU </h2>
+        <p className="header__content">"Tập luyện không chỉ là về cơ bắp hay số cân bạn nâng được, mà còn là về hành trình nâng cao sức khỏe thể chất và tinh thần. Sản phẩm web của chúng tôi được thiết kế để đồng hành cùng bạn trong từng bước của hành trình này. Với các chương trình luyện tập cá nhân hóa, theo dõi tiến độ chi tiết, và cộng đồng hỗ trợ sôi động, chúng tôi giúp bạn không chỉ đạt được mục tiêu mà còn duy trì động lực mỗi ngày. Dù bạn là người mới bắt đầu hay đã có kinh nghiệm, hãy để chúng tôi giúp bạn chinh phục đỉnh cao sức khỏe và thể hình."
+
+</p>
       </section>
 
       <div className="new-container">
@@ -23,13 +21,8 @@ const AboutUs = () => {
               <img src="/img1.jpg" alt="Our Story" />
             </div>
             <div className="about-text" >
-              <h3 style={{marginLeft: '40px'}}>Our Story</h3>
-              <p className="about-text" style={{marginLeft: '40px'}}>SmartFit was founded with the vision of making fitness both accessible and transformative for everyone. 
-                  What began as a passion for helping people achieve their health goals has grown into a vibrant community 
-                  where cutting-edge fitness techniques and personalized training come together. 
-                  We are committed to fostering an inclusive environment where every member feels empowered to become 
-                  their best self, whether through strength training, cardio, or yoga. At SmartFit, we're more than just a 
-                  fitness center—we're a family dedicated to your growth and well-being.
+              <h3 style={{marginLeft: '40px'}}>CHÚNG TÔI LÀ AI </h3>
+              <p className="about-text" style={{marginLeft: '40px'}}>Chúng tôi là ai? SmartFit được thành lập với sứ mệnh mang đến sự dễ dàng tiếp cận và khả năng thay đổi tích cực từ việc tập luyện thể thao cho mọi người. Từ một niềm đam mê giúp mọi người đạt được mục tiêu sức khỏe của mình, chúng tôi đã phát triển thành một cộng đồng năng động, nơi các kỹ thuật tập luyện tiên tiến và chương trình huấn luyện cá nhân hóa kết hợp hoàn hảo. Chúng tôi cam kết xây dựng một môi trường hòa nhập, nơi mỗi thành viên đều cảm thấy được khích lệ để trở thành phiên bản tốt nhất của chính mình, dù là qua luyện tập sức mạnh, cardio hay yoga. Tại SmartFit, chúng tôi không chỉ là một trung tâm thể hình—chúng tôi là một gia đình luôn tận tâm với sự phát triển và sức khỏe của bạn.
               </p>
             </div>
           </div>
@@ -38,14 +31,9 @@ const AboutUs = () => {
         <section className="about-us-section reverse">
           <div className="about-section-content">
             <div className="about-text">
-              <h3 style={{marginRight: '40px'}}>Our Vision</h3>
-              <p className="about-text" style={{marginRight: '40px'}}>At SmartFit, our vision is to create a thriving community
-                 where fitness is not just a goal but a way of life. 
-                 We believe that everyone, regardless of their starting point, 
-                 deserves the opportunity to lead a healthier, stronger, and more balanced life. 
-                 By integrating cutting-edge training methods with holistic wellness practices, we aim to inspire 
-                 and empower individuals to embrace their personal fitness journey. Our goal is to build an inclusive space 
-                 where people can connect, grow, and transform together, cultivating both physical strength and mental resilience.</p>
+              <h3 style={{marginRight: '40px'}}>TẦM NHÌN </h3>
+              <p className="about-text" style={{marginRight: '40px'}}>Tại SmartFit, tầm nhìn của chúng tôi là tạo ra một cộng đồng phát triển mạnh mẽ, nơi việc rèn luyện thể chất không chỉ là một mục tiêu mà còn trở thành lối sống. Chúng tôi tin rằng mọi người, dù bắt đầu từ bất kỳ điểm xuất phát nào, đều xứng đáng có cơ hội để sống khỏe mạnh hơn, mạnh mẽ hơn và cân bằng hơn. Bằng cách kết hợp các phương pháp tập luyện tiên tiến với những thực hành chăm sóc sức khỏe toàn diện, chúng tôi mong muốn truyền cảm hứng và trao quyền để mỗi cá nhân tự tin bước vào hành trình thể chất của riêng mình. Mục tiêu của chúng tôi là xây dựng một không gian hòa nhập, nơi mọi người có thể kết nối, phát triển và thay đổi cùng nhau, nuôi dưỡng cả sức mạnh thể chất lẫn sự kiên cường tinh thần.
+</p>
             </div>
             <div className="about-image" style={{marginLeft: '40px'}}>
               <img src="/img2.jpg" alt="Our Vision" />
@@ -59,14 +47,8 @@ const AboutUs = () => {
               <img src="/img3.jpg" alt="Our Mission" />
             </div>
             <div className="about-text">
-              <h3 style={{marginLeft: '40px'}}>Our Mission</h3>
-              <p className="about-text" style={{marginLeft: '40px'}}>Our mission at SmartFit is to deliver personalized, 
-                innovative fitness solutions that cater to individuals of all fitness levels. 
-                We are dedicated to combining the best of strength training, cardiovascular health, and yoga to 
-                offer a comprehensive approach to well-being. With a focus on creating lasting habits, 
-                we strive to support each member in achieving their unique goals—whether it’s improving fitness, 
-                increasing mindfulness, or enhancing overall health. At SmartFit, we are committed to providing the tools, 
-                guidance, and community necessary for long-term success in both body and mind.</p>
+              <h3 style={{marginLeft: '40px'}}>SỨ MỆNH</h3>
+              <p className="about-text" style={{marginLeft: '40px'}}>Sứ mệnh của SmartFit là mang đến các giải pháp tập luyện cá nhân hóa và sáng tạo, phù hợp với mọi cấp độ thể chất. Chúng tôi tận tâm kết hợp tinh hoa của tập luyện sức mạnh, sức khỏe tim mạch và yoga để cung cấp một phương pháp toàn diện hướng đến sức khỏe. Với trọng tâm là xây dựng thói quen bền vững, chúng tôi luôn hỗ trợ từng thành viên đạt được mục tiêu riêng của họ—dù đó là cải thiện thể lực, tăng cường sự tỉnh thức hay nâng cao sức khỏe tổng thể. Tại SmartFit, chúng tôi cam kết mang đến những công cụ, sự hướng dẫn và cộng đồng cần thiết để bạn đạt được thành công lâu dài cả về thể chất lẫn tinh thần.</p>
             </div>
           </div>
         </section>

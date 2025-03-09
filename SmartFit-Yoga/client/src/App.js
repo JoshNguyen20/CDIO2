@@ -16,11 +16,14 @@ const App = () => {
             const Page = route.page;
             return <Route key={route.id} path={route.path} element={<Page />} />;
           })}
+          
         </Routes>
       </Router>
       <ChatBot/>
     </div>
   );
 };
+
+
 
 export default App;

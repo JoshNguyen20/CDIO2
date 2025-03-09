@@ -4,8 +4,7 @@
   "description": "Smart Yoga Backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon app/server.js",
+    "start": "nodemon app/server.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write ."
@@ -15,18 +14,21 @@
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
     "iconv-lite": "^0.6.3",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.1",
+    "mongoose": "^7.8.6",
     "morgan": "^1.10.0",
     "node-cache": "^5.1.2",
-    "nodemailer": "^6.9.3",
-    "stripe": "^17.3.1"
+    "nodemailer": "^6.10.0",
+    "stripe": "^17.3.1",
+    "validator": "^13.12.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
@@ -40,5 +42,8 @@
     "globals": "^15.12.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.3.3"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

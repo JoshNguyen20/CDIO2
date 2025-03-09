@@ -59,9 +59,9 @@ const WorkoutPlan = () => {
       <div>
         <Navbar />
         <div className="auth-message-container">
-          <h2>You need to log in to access this page.</h2>
+          <h2>Bạn cần phải đăng nhập để truy cập trang này.</h2>
           <button className="navigate-button" onClick={() => navigate('/login')}>
-            Go to Login
+          Đi đến đăng nhập
           </button>
         </div>
         <Footer />
@@ -74,13 +74,13 @@ const WorkoutPlan = () => {
       <Navbar />
 
       <div className="workout-header">
-        <h1>WORKOUT PLANS</h1>
+        <h1>KẾ HOẠCH TẬP LUYỆN</h1>
       </div>
 
       <div className="workout-plan-container">
         <div className="workout-wrapper">
           {loading ? (
-            <p>Loading...</p>
+            <p>Đang tải...</p>
           ) : error ? (
             <p style={{ color: 'red' }}>{error}</p>
           ) : (
@@ -113,9 +113,9 @@ const WorkoutPlan = () => {
                                 onClick={() => handleExerciseClick(exercise)}
                               >
                                 <h3>{exercise.title}</h3>
-                                <p>{exercise.workout_title} mins</p>
-                                <p>Duration: {exercise.duration} mins</p>
-                                <p>Intensity: {exercise.intensity}</p>
+                                <p>{exercise.workout_title} phút </p>
+                                <p>Khoảng thời gian: {exercise.duration} phút </p>
+                                <p>Cường độ: {exercise.intensity}</p>
                               </div>
                             ))}
                           </div>
@@ -125,7 +125,7 @@ const WorkoutPlan = () => {
                     })}
                   </div>
                 ) : (
-                  <p>Please select a day to see the workouts.</p>
+                  <p>Vui lòng chọn một ngày để xem bài tập luyện.</p>
                 )}
               </div>
             </div>
@@ -142,14 +142,14 @@ const WorkoutPlan = () => {
                 </button>
               </div>
               <div>
-                <p><strong>Title:</strong> {selectedExercise.workout_title}</p>
-                <p><strong>Type:</strong> {selectedExercise.type}</p>
-                <p><strong>Duration:</strong> {selectedExercise.duration} mins</p>
-                <p><strong>Intensity:</strong> {selectedExercise.intensity}</p>
-                <p><strong>Description:</strong> {selectedExercise.description}</p>
+                <p><strong>Tiêu đề:</strong> {selectedExercise.workout_title}</p>
+                <p><strong>Kiểu:</strong> {selectedExercise.type}</p>
+                <p><strong>Khoảng thời gian:</strong> {selectedExercise.duration} phút </p>
+                <p><strong>Cường độ:</strong> {selectedExercise.intensity}</p>
+                <p><strong>Miêu tả :</strong> {selectedExercise.description}</p>
               </div>
               <div className="modal-footer">
-                <button onClick={() => setSelectedExercise(null)}>Close</button>
+                <button onClick={() => setSelectedExercise(null)}>Đóng </button>
               </div>
             </div>
           </div>

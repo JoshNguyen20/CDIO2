@@ -39,9 +39,9 @@ const VerifyOtpPage = () => {
   return (
     <Components.Container>
       <Components.FormContainer>
-        <Components.Title>Verify OTP</Components.Title>
+        <Components.Title>Xác minh OTP</Components.Title>
         <Components.Subtitle>
-          Enter the 6-digit code sent to your email
+        Nhập mã 6 chữ số được gửi đến email của bạn
         </Components.Subtitle>
         <form onSubmit={submitHandler}>
           <Components.OtpContainer>
@@ -60,12 +60,12 @@ const VerifyOtpPage = () => {
               );
             })}
           </Components.OtpContainer>
-          <Components.Button type="submit">Verify OTP</Components.Button>
+          <Components.Button type="submit">Xác minh OTP</Components.Button>
         </form>
         <Components.Timer>
           <Timer />
         </Components.Timer>
-        <Components.Link href="/forgot-password">Back</Components.Link>
+        <Components.Link href="/forgot-password">Quay về </Components.Link>
       </Components.FormContainer>
     </Components.Container>
   );

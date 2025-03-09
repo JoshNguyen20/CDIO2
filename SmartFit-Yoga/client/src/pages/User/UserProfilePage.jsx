@@ -79,18 +79,18 @@ const UserProfilePage = () => {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Đang tải...</div>;
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div>Lỗi: {error}</div>;
   }
 
   return (
     <div>
       <Navbar />
       <div className="workout-header">
-        <h1>PROFILE</h1>
+        <h1>Thông Tin</h1>
       </div>
       <div className="profile-container">
         <div className="profile-card">
@@ -102,7 +102,7 @@ const UserProfilePage = () => {
             />
           </div>
           <p>
-            <strong>Name:</strong> {user.name}
+            <strong>Tên :</strong> {user.name}
           </p>
           {/* <p>
             <strong>Gender:</strong> {user.gender}
@@ -111,20 +111,20 @@ const UserProfilePage = () => {
             <strong>Email:</strong> {user.email}
           </p>
           <p>
-            <strong>Role:</strong> {user.role}
+            <strong>Vị trí :</strong> {user.role}
           </p>
           <p>
-            <strong>Created At:</strong> {user.created_at}
+            <strong>Ngày tạo:</strong> {user.created_at}
           </p>
           <p>
-            <strong>Updated At:</strong> {user.updated_at}
+            <strong>Ngày cập nhật:</strong> {user.updated_at}
           </p>
           <div className="buttonstyle">
             {/* <button className="edit-btn" onClick={handleEdit}>
               Edit
             </button> */}
             <button className="logout-btn" onClick={handleLogout}>
-              Logout
+              Đăng Xuất 
             </button>
           </div>
         </div>
@@ -133,7 +133,7 @@ const UserProfilePage = () => {
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)}>
           <div className="profile-field">
-            <label>Name:</label>
+            <label>Tên:</label>
             <input
               type="text"
               name="name"
@@ -142,10 +142,10 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Gender:</label>
+            <label>Giới tính:</label>
             <select name="gender" value={formData.gender} onChange={handleChange}>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option value="male">Nam </option>
+              <option value="female">Nữ </option>
             </select>
           </div>
           <div className="profile-field">
@@ -158,7 +158,7 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Age:</label>
+            <label>Tuổi :</label>
             <input
               type="number"
               name="age"
@@ -167,7 +167,7 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Weight:</label>
+            <label>Cân Nặng :</label>
             <input
               type="number"
               name="weight"
@@ -176,7 +176,7 @@ const UserProfilePage = () => {
             />
           </div>
           <div className="profile-field">
-            <label>Height:</label>
+            <label>Chiều Cao :</label>
             <input
               type="number"
               name="height"
@@ -186,10 +186,10 @@ const UserProfilePage = () => {
           </div>
           <div className="profile-buttons">
             <button className="save-btn" onClick={handleSave}>
-              Save
+              Lưu 
             </button>
             <button className="cancel-btn" onClick={handleCancel}>
-              Cancel
+              Hủy 
             </button>
           </div>
         </Modal>

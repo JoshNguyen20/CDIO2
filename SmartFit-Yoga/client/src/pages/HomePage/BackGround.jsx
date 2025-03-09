@@ -29,8 +29,8 @@ const BackGround = () => {
         </video>
         <img src="/slogan.png" className="centered-image" alt="Slogan"/>
         <div className="button-container">
-          <button1 onClick={() => navigate('/workout-plans')}>WORKOUT PLAN</button1>
-          <button2 onClick={() => navigate('/meal-plans')}>NUTRITION PLAN</button2>
+          <button1 onClick={() => navigate('/workout-plans')}>KẾ HOẠCH TẬP LUYỆN </button1>
+          <button2 onClick={() => navigate('/meal-plans')}>KẾ HOẠCH DINH DƯỠNG </button2>
         </div>
         {isPlaying ? (
           <FaPause className="button-fa" onClick={handlePause} />

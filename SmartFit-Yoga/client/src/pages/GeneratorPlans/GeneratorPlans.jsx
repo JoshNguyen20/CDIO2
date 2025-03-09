@@ -43,7 +43,7 @@ const GeneratorPlansPage = () => {
             const token = localStorage.getItem("token");
 
             if (!token) {
-                throw new Error("Token is missing. Please log in.");
+                throw new Error("Thiếu mã thông báo. Vui lòng đăng nhập.");
             }
 
             const mealPlanPayload = {
@@ -83,7 +83,7 @@ const GeneratorPlansPage = () => {
         } catch (err) {
             const errorMessage = err.response
                 ? err.response.data.error || JSON.stringify(err.response.data)
-                : err.message || "An error occurred.";
+                : err.message || "Đã xảy ra lỗi.";
             setError(errorMessage);
         } finally {
             setLoading(false);
@@ -96,9 +96,9 @@ const GeneratorPlansPage = () => {
             <div>
                 <Navbar />
                 <div className="auth-message-container">
-                    <h2>You need to log in to access this page.</h2>
+                    <h2>Bạn cần đăng nhập để truy cập trang này.</h2>
                     <button className="navigate-button" onClick={() => navigate("/login")}>
-                        Go to Login
+                    Đi đến trang Đăng nhập
                     </button>
                 </div>
                 <Footer />
@@ -110,12 +110,12 @@ const GeneratorPlansPage = () => {
         <div>
             <Navbar />
             <div className="workout-header">
-                <h1>GENERATE YOUR PLANS</h1>
+                <h1>TẠO KẾ HOẠCH CỦA BẠN</h1>
             </div>
             <div className="generator-container">
                 <form className="generator-form" onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label className="generator-label">Age:</label>
+                        <label className="generator-label">Tuổi:</label>
                         <input
                             className="generator-input"
                             type="number"
@@ -123,12 +123,12 @@ const GeneratorPlansPage = () => {
                             value={formData.age}
                             onChange={handleInputChange}
                             required
-                            placeholder="Enter your age"
+                            placeholder="Nhập tuổi của bạn"
                         />
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Gender:</label>
+                        <label className="generator-label">Giới tính:</label>
                         <select
                             className="generator-select"
                             name="gender"
@@ -136,13 +136,13 @@ const GeneratorPlansPage = () => {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
+                            <option value="1">Nam</option>
+                            <option value="2">Nữ</option>
                         </select>
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Weight (kg):</label>
+                        <label className="generator-label">Cân nặng (kg):</label>
                         <input
                             className="generator-input"
                             type="number"
@@ -150,12 +150,12 @@ const GeneratorPlansPage = () => {
                             value={formData.weight}
                             onChange={handleInputChange}
                             required
-                            placeholder="Enter your weight"
+                            placeholder="Nhập cân nặng của bạn"
                         />
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Height (cm):</label>
+                        <label className="generator-label">Chiều Cao (cm):</label>
                         <input
                             className="generator-input"
                             type="number"
@@ -163,12 +163,12 @@ const GeneratorPlansPage = () => {
                             value={formData.height}
                             onChange={handleInputChange}
                             required
-                            placeholder="Enter your height"
+                            placeholder="Nhập chiều cao của bạn"
                         />
                     </div>
 
                     <div className="form-group">
-                        <label className="generator-label">Goal:</label>
+                        <label className="generator-label">Mục Tiêu:</label>
                         <select
                             className="generator-select"
                             name="goal"
@@ -176,14 +176,14 @@ const GeneratorPlansPage = () => {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="Build Muscle">Build Muscle</option>
-                            <option value="Lose Weight">Lose Weight</option>
-                            <option value="Maintain Weight">Maintain Weight</option>
+                            <option value="Build Muscle">Tăng cơ</option>
+                            <option value="Lose Weight">Giảm cân</option>
+                            <option value="Maintain Weight">Duy trì cân nặng</option>
                         </select>
                     </div>
 
                     <button type="submit" className="submit-button" disabled={loading}>
-                        {loading ? "Generating..." : "Generate Plan"}
+                        {loading ? "Generating..." : "Tạo Kế Hoạch"}
                     </button>
                 </form>
 
@@ -196,20 +196,20 @@ const GeneratorPlansPage = () => {
                 {success && (
                     <div className="success-overlay">
                         <div className="success-box">
-                            <h2>Success!</h2>
-                            <p>Your plans have been successfully created.</p>
+                            <h2>Thành công!</h2>
+                            <p>Kế hoạch của bạn đã được tạo thành công.</p>
                             <div className="button-group">
                                 <button
                                     className="navigate-button"
                                     onClick={() => navigate("/workout-plans")}
                                 >
-                                    Go to Workout Plans
+                                    Đi đến Kế Hoạch Tập Luyện
                                 </button>
                                 <button
                                     className="navigate-button"
                                     onClick={() => navigate("/meal-plans")}
                                 >
-                                    Go to Meal Plans
+                                    Đi đến Kế Hoạch Dinh Dưỡng
                                 </button>
                             </div>
                         </div>

@@ -31,7 +31,7 @@ const ToolForUser = () => {
   const [hip, setHip] = useState("");
 
   const calculateBodyFat = () => {
-    if (gender === "male" && neck && waist && height) {
+    if (gender === "Nam" && neck && waist && height) {
       const result =
         495 /
           (1.0324 -
@@ -39,7 +39,7 @@ const ToolForUser = () => {
             0.15456 * Math.log10(height)) -
         450;
       setBodyFat(result.toFixed(2));
-    } else if (gender === "female" && neck && waist && hip && height) {
+    } else if (gender === "Nữ" && neck && waist && hip && height) {
       const result =
         495 /
           (1.29579 -
@@ -56,7 +56,7 @@ const ToolForUser = () => {
   const calculateCalorieNeeds = () => {
     if (weight && height && age && gender) {
       let bmr;
-      if (gender === "male") {
+      if (gender === "Nam ") {
         bmr = 88.36 + 13.4 * weight + 4.8 * height - 5.7 * age;
       } else {
         bmr = 447.6 + 9.2 * weight + 3.1 * height - 4.3 * age;
@@ -94,7 +94,7 @@ const ToolForUser = () => {
   const calculateIdealWeight = () => {
     if (height) {
       const heightInInches = height / 2.54; // Convert cm to inches
-      const baseWeight = gender === "male" ? 50 : 45.5;
+      const baseWeight = gender === "nam " ? 50 : 45.5;
       const additionalWeight = (heightInInches - 60) * 2.3;
       setIdealWeight((baseWeight + additionalWeight).toFixed(2));
     }
@@ -115,151 +115,149 @@ const ToolForUser = () => {
     <Navbar/>
     <div className="tools-page">
       <header className="workout-header">
-        <h1>FITNESS TOOLS</h1>
-        <p>Quick tools to guide you on your health and fitness journey!</p>
+        <h1>CÔNG CỤ TÍNH TOÁN TỈ LỆ </h1>
+        <p>Công cụ tính toán nhanh chóng để hướng dẫn bạn trên hành trình cải thiện sức khỏe và thể hình của mình!</p>
       </header>
 
       <div className="tools-container">
         {/* BMI Calculator */}
         <div className="tool-card">
-          <h2>BMI Calculator</h2>
-          <p>Calculate your Body Mass Index (BMI).</p>
+          <h2>Máy tính BMI</h2>
+          <p>Tính chỉ số khối cơ thể (BMI) của bạn.</p>
           <div className="input-group">
             <input
               type="number"
-              placeholder="Weight (kg)"
+              placeholder="Cân Nặng  (kg)"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
             <input
               type="number"
-              placeholder="Height (cm)"
+              placeholder="Chiều Cao  (cm)"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
-            <button onClick={calculateBMI}>Calculate BMI</button>
+            <button onClick={calculateBMI}>Máy tính BMI</button>
           </div>
-          {bmi && <p>Your BMI: <strong>{bmi}</strong></p>}
+          {bmi && <p>Chỉ số BMI của bạn: <strong>{bmi}</strong></p>}
         </div>
 
         {/* Body Fat Calculator */}
         <div className="tool-card">
-          <h2>Body Fat Calculator</h2>
-          <p>Estimate your body fat percentage.</p>
+          <h2>Tính lượng mỡ cơ thể</h2>
+          <p>Ước tính tỷ lệ mỡ cơ thể của bạn.</p>
           <div className="input-group">
             <input
               type="number"
-              placeholder="Neck (cm)"
+              placeholder="Cổ  (cm)"
               value={neck}
               onChange={(e) => setNeck(e.target.value)}
             />
             <input
               type="number"
-              placeholder="Waist (cm)"
+              placeholder="Eo  (cm)"
               value={waist}
               onChange={(e) => setWaist(e.target.value)}
             />
-            {gender === "female" && (
+            {gender === "Nữ " && (
               <input
                 type="number"
-                placeholder="Hip (cm)"
+                placeholder="Hông  (cm)"
                 value={hip}
                 onChange={(e) => setHip(e.target.value)}
               />
             )}
-            <button onClick={calculateBodyFat}>Calculate Body Fat</button>
+            <button onClick={calculateBodyFat}>Tính lượng mỡ cơ thể</button>
           </div>
-          {bodyFat && <p>Your Body Fat: <strong>{bodyFat}%</strong></p>}
+          {bodyFat && <p>Lượng mỡ cơ thể của bạn: <strong>{bodyFat}%</strong></p>}
         </div>
 
         {/* Daily Calorie Needs Calculator */}
         <div className="tool-card">
-          <h2>Daily Calorie Needs Calculator</h2>
+          <h2>Tính nhu cầu calo hằng ngày</h2>
           <p>
-            Calculate how many calories you need per day based on your activity
-            level.
+          Tính toán lượng calo bạn cần mỗi ngày dựa trên mức độ hoạt động của bạn.
           </p>
           <div className="input-group">
             <select
               value={activityLevel}
               onChange={(e) => setActivityLevel(e.target.value)}
             >
-              <option value="1.2">Sedentary (Little or no exercise)</option>
-              <option value="1.375">Lightly Active (Light exercise)</option>
-              <option value="1.55">Moderately Active (Moderate exercise)</option>
-              <option value="1.725">Very Active (Hard exercise)</option>
-              <option value="1.9">Extremely Active (Very intense exercise)</option>
+              <option value="1.2">Ít vận động (Ít hoặc không có bài tập thể dục)</option>
+              <option value="1.375">Hoạt động nhẹ (Tập thể dục nhẹ)</option>
+              <option value="1.55">Hoạt động vừa phải (Tập thể dục vừa phải)</option>
+              <option value="1.725">Rất hoạt động (Tập thể dục nặng)</option>
+              <option value="1.9">Cực kỳ hoạt động (Tập thể dục rất cường độ cao)</option>
             </select>
             <button onClick={calculateCalorieNeeds}>
-              Calculate Calorie Needs
+            Tính nhu cầu calo hằng ngày
             </button>
           </div>
           {calorieNeeds && (
             <p>
-              Your daily calorie needs: <strong>{calorieNeeds} calories</strong>
+            Nhu cầu calo hằng ngày của bạn: <strong>{calorieNeeds} calories</strong>
             </p>
           )}
         </div>
 
         {/* Step to Distance Converter */}
         <div className="tool-card">
-          <h2>Step to Distance Converter</h2>
+          <h2>Bước đi</h2>
           <p>
-            Convert your steps into kilometers based on your stride length.
+          Chuyển đổi số bước chân của bạn thành kilômét dựa trên độ dài sải chân.
           </p>
           <div className="input-group">
             <input
               type="number"
-              placeholder="Number of steps"
+              placeholder="Số bước đi "
               value={steps}
               onChange={(e) => setSteps(e.target.value)}
             />
             <input
               type="number"
-              placeholder="Stride length (cm)"
+              placeholder="Chiều dài sải chân (cm)"
               value={strideLength}
               onChange={(e) => setStrideLength(e.target.value)}
             />
-            <button onClick={calculateDistance}>Calculate Distance</button>
+            <button onClick={calculateDistance}>Tính toán khoảng cách</button>
           </div>
           {distance && (
             <p>
-              Distance walked: <strong>{distance} km</strong>
+            Khoảng cách đã đi: <strong>{distance} km</strong>
             </p>
           )}
         </div>
 
         {/* Heart Rate Zones Calculator */}
         <div className="tool-card">
-          <h2>Heart Rate Zones Calculator</h2>
+          <h2>Đo Nhịp Tim </h2>
           <p>
-            Calculate your optimal heart rate zones for different exercise
-            levels.
+          Tính toán vùng nhịp tim tối ưu của bạn cho các mức độ tập luyện khác nhau
           </p>
           <div className="input-group">
             <input
               type="number"
-              placeholder="Age"
+              placeholder="Tuổi "
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
             <button onClick={calculateHeartRateZones}>
-              Calculate Heart Rate Zones
+              Tính toán nhịp tim 
             </button>
           </div>
           {maxHeartRate && (
             <div>
               <p>
-                <strong>Zone 1 (Warm-up):</strong> {maxHeartRate.zone1}
+                <strong>Khởi động</strong> {maxHeartRate.zone1}
               </p>
               <p>
-                <strong>Zone 2 (Fat Burn):</strong> {maxHeartRate.zone2}
+                <strong>Đốt mỡ:</strong> {maxHeartRate.zone2}
               </p>
               <p>
-                <strong>Zone 3 (Cardio):</strong> {maxHeartRate.zone3}
+                <strong>Cardio:</strong> {maxHeartRate.zone3}
               </p>
               <p>
-                <strong>Zone 4 (Hardcore):</strong> {maxHeartRate.zone4}
+                <strong>Cường độ cao:</strong> {maxHeartRate.zone4}
               </p>
             </div>
           )}
@@ -267,45 +265,44 @@ const ToolForUser = () => {
 
         {/* Ideal Weight Calculator */}
         <div className="tool-card">
-          <h2>Ideal Weight Calculator</h2>
+          <h2>Tính cân nặng lý tưởng</h2>
           <p>
-            Calculate your ideal weight based on your height and gender.
+          Tính toán cân nặng lý tưởng của bạn dựa trên chiều cao và giới tính.
           </p>
           <div className="input-group">
             <input
               type="number"
-              placeholder="Height (cm)"
+              placeholder="Chiều cao  (cm)"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
             <select value={gender} onChange={(e) => setGender(e.target.value)}>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option value="Nam ">Nam </option>
+              <option value="Nữ ">Nữ </option>
             </select>
-            <button onClick={calculateIdealWeight}>Calculate Ideal Weight</button>
+            <button onClick={calculateIdealWeight}>Tính cân nặng lý tưởng</button>
           </div>
           {idealWeight && (
             <p>
-              Your ideal weight: <strong>{idealWeight} kg</strong>
+            Cân nặng lý tưởng của bạn: <strong>{idealWeight} kg</strong>
             </p>
           )}
         </div>
 
         {/* Macro Nutrient Split Calculator */}
         <div className="tool-card">
-          <h2>Macro Nutrient Split Calculator</h2>
+          <h2>Tính phân chia dinh dưỡng</h2>
           <p>
-            Calculate your daily protein, carbohydrate, and fat needs based on
-            your calorie goals.
+          Tính toán nhu cầu protein, carbohydrate và chất béo hàng ngày của bạn dựa trên mục tiêu calo.
           </p>
           <div className="input-group">
             <input
               type="number"
-              placeholder="Total Calories (cal/day)"
+              placeholder="Tổng lượng Calories (cal/ngày )"
               value={calorieNeeds}
               onChange={(e) => setCalorieNeeds(e.target.value)}
             />
-            <button onClick={calculateMacroSplit}>Calculate Macro Split</button>
+            <button onClick={calculateMacroSplit}>Tính phân chia dinh dưỡng</button>
           </div>
           {macroSplit && (
             <div>

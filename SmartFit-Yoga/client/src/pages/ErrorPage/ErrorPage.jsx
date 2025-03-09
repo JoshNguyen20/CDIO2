@@ -11,9 +11,9 @@ const ErrorPage = () => {
                 <div className="error-container">
                     <div className="error-code">404</div>
                     <div className="error-message">
-                        Oops! The page you are looking for does not exist.
+                    Ôi! Trang bạn đang tìm kiếm không tồn tại.
                     </div>
-                    <Link to="/home" className="home-link">Click here to return to home page</Link>
+                    <Link to="/home" className="home-link">Nhấp vào đây để trở lại trang chủ</Link>
     
                 </div>
             {/* </MatrixParallax> */}

@@ -42,16 +42,16 @@ const Timer = () => {
   }, [timeLeft]);
 
   const handleResend = () => {
-    console.log('Resending OTP');
+    console.log('Đang GỬi Lại Mẫ OTP...');
     setTimeLeft(60);
   };
 
   return (
     <TimerContainer>
       {timeLeft > 0 ? (
-        <>Resend OTP in {timeLeft}s</>
+        <>Gửi Lại Mã OTPOTP {timeLeft}s</>
       ) : (
-        <ResendLink onClick={handleResend}>Resend OTP</ResendLink>
+        <ResendLink onClick={handleResend}>Gửi Lại Mã OTP</ResendLink>
       )}
     </TimerContainer>
   );

@@ -68,58 +68,58 @@ const CreatePage = () => {
 
     return (
         <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px', textAlign: 'center' }}>
-            <h1>Health Plan Generator</h1>
+            <h1>Tạo kế hoạch cho sức khỏe của bạn</h1>
             <form onSubmit={handleSubmit}>
                 <div style={{ marginBottom: '10px' }}>
-                    <label>Age:</label>
+                    <label>Tuổi:</label>
                     <input
                         type="number"
-                        name="age"
+                        name="Tuổi "
                         value={formData.age}
                         onChange={handleChange}
                         required
                     />
                 </div>
                 <div style={{ marginBottom: '10px' }}>
-                    <label>Weight (kg):</label>
+                    <label>Cân Nặng (kg):</label>
                     <input
                         type="number"
-                        name="weight"
+                        name="Cân Nặng "
                         value={formData.weight}
                         onChange={handleChange}
                         required
                     />
                 </div>
                 <div style={{ marginBottom: '10px' }}>
-                    <label>Height (cm):</label>
+                    <label>Chiều Cao  (cm):</label>
                     <input
                         type="number"
-                        name="height"
+                        name="Chiều Cao "
                         value={formData.height}
                         onChange={handleChange}
                         required
                     />
                 </div>
                 <div style={{ marginBottom: '10px' }}>
-                    <label>Goal:</label>
+                    <label>Mục Tiêu:</label>
                     <select
-                        name="goal"
+                        name="Mục Tiêu "
                         value={formData.goal}
                         onChange={handleChange}
                         required
                     >
-                        <option value="">Select a goal</option>
-                        <option value="Weight Loss">Weight Loss</option>
-                        <option value="Muscle Gain">Muscle Gain</option>
-                        <option value="Maintain Weight">Maintain Weight</option>
+                        <option value="">Chọn một mục tiêu</option>
+                        <option value="Giảm cân">Giảm cân</option>
+                        <option value="Tăng cơ">Tăng cơ</option>
+                        <option value="Duy trì cân nặng">Duy trì cân nặng</option>
                     </select>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="Gửi">Gửi</button>
             </form>
 
             {error && (
                 <div style={{ marginTop: '20px', color: 'red' }}>
-                    <h2>Error:</h2>
+                    <h2>Lỗi:</h2>
                     <p>{typeof error === 'string' ? error : JSON.stringify(error, null, 2)}</p>
                 </div>
             )}

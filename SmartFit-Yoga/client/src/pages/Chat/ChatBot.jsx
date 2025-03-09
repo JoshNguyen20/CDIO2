@@ -19,7 +19,7 @@ const ChatBot = () => {
   useEffect(() => {
     if (isChatOpen && !hasGreeted) {
       const greetMessage = {
-        text: "Hello! How can I assist you today?",
+        text: "Xin chào! Tôi có thể hỗ trợ bạn điều gì trong hôm nay?",
         sender: "bot",
         time: new Date().toLocaleTimeString("en-US", {
           hour: "2-digit",
@@ -47,11 +47,11 @@ const ChatBot = () => {
         return data.response; // Trả về phản hồi từ chatbot
       } else {
         console.error(data.error);
-        return "Sorry, something went wrong.";
+        return "Xin lỗi, đã xảy ra sự cố.";
       }
     } catch (error) {
       console.error("Error calling chatbot API:", error);
-      return "Unable to connect to the chatbot server.";
+      return "Không thể kết nối với máy chủ chatbot.";
     }
   };
 
@@ -105,7 +105,7 @@ const ChatBot = () => {
           <h className="headerText">
             <RiRobot3Fill />
           </h>
-          <span className="headTitle">Assitance</span>
+          <span className="headTitle">Hỗ trợ</span>
           <button onClick={toggleChat}>
             <FaMinus />
           </button>
@@ -124,7 +124,7 @@ const ChatBot = () => {
         <div className="chatFooter">
           <input
             type="text"
-            placeholder="Enter Messages"
+            placeholder="Nhập câu hỏi của bạn..."
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyPress}

@@ -45,7 +45,7 @@ const Verimail = () => {
         const registerData = JSON.parse(localStorage.getItem('registerData'));
         
         if (!registerData || !registerData.email) {
-            Swal.fire('Lỗi!', 'Không tìm thấy thông tin đăng ký', 'error');
+            Swal.fire('Error!', 'Registration information not found', 'error');
             return;
         }
     
@@ -68,7 +68,7 @@ const Verimail = () => {
                     
                     console.log("Register API Response:", registerResponse.data);
                     
-                    Swal.fire('Đăng ký thành công!', 'Tài khoản của bạn đã được tạo', 'success').then(() => {
+                    Swal.fire('Registration Successful!', 'Your account has been created', 'success').then(() => {
                         localStorage.removeItem('registerData');
                         console.log("🚀 Navigating to login...");
                         navigate('/login');
@@ -76,19 +76,19 @@ const Verimail = () => {
                 } catch (registerError) {
                     console.error("Register API Error:", registerError);
                     Swal.fire(
-                        'Lỗi đăng ký!', 
-                        registerError.response?.data?.msg || 'Không thể hoàn tất đăng ký', 
+                        'Registration Error!', 
+                        registerError.response?.data?.msg || 'Unable to complete registration', 
                         'error'
                     );
                 }
             } else {
-                Swal.fire('Lỗi!', verifyResponse.data.msg || 'Mã xác thực không hợp lệ', 'error');
+                Swal.fire('Error!', verifyResponse.data.msg || 'Invalid verification code', 'error');
             }
         } catch (error) {
             console.error("Verify API Error:", error);
             Swal.fire(
-                'Lỗi xác thực!', 
-                error.response?.data?.msg || 'Có lỗi xảy ra khi xác thực mã', 
+                'Verification Error!', 
+                error.response?.data?.msg || 'An error occurred while verifying the code', 
                 'error'
             );
         } finally {
@@ -101,7 +101,7 @@ const Verimail = () => {
         const registerData = JSON.parse(localStorage.getItem('registerData'));
         
         if (!registerData || !registerData.email) {
-            Swal.fire('Lỗi!', 'Không tìm thấy thông tin đăng ký', 'error');
+            Swal.fire('Error!', 'Registration information not found', 'error');
             setIsLoading(false);
             return;
         }
@@ -114,17 +114,17 @@ const Verimail = () => {
             
             if (response.status === 200) {
                 Swal.fire(
-                    'Thành công',
-                    'Mã xác thực mới đã được gửi đến email của bạn',
+                    'Success',
+                    'A new verification code has been sent to your email',
                     'success'
                 );
                 setCountdown(60);
                 setCanResend(false);
             } else {
-                Swal.fire('Lỗi!', response.data.msg || 'Lỗi khi gửi lại mã xác thực mới!', 'error');
+                Swal.fire('Error!', response.data.msg || 'Error sending new verification code!', 'error');
             }
         } catch (error) {
-            const errorMessage = error.response?.data?.msg || 'Có lỗi xảy ra khi gửi lại mã';
+            const errorMessage = error.response?.data?.msg || 'An error occurred while resending the code';
             Swal.fire('Oops!', errorMessage, 'error');
         } finally {
             setIsLoading(false);
@@ -139,14 +139,14 @@ const Verimail = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <h1 className="verimail-title">Xác thực Email</h1>
+                <h1 className="verimail-title">Email Verification</h1>
                 <form className="verimail-form" onSubmit={handleVerify}>
                     <div className="input-wrapper">
                         <FiMail className="mail-icon" />
                         <input
                             type="text"
                             className={`verimail-input ${invalidFields.some(field => field.name === 'verificationCode') ? 'error' : ''}`}
-                            placeholder="Nhập mã xác thực"
+                            placeholder="Enter verification code"
                             value={verificationCode}
                             onChange={handleChange}
                         />
@@ -157,12 +157,12 @@ const Verimail = () => {
                         className={`verimail-button ${isLoading ? 'disabled' : ''}`}
                         disabled={isLoading}
                     >
-                        {isLoading ? 'Đang xác thực...' : 'Xác minh'}
+                        {isLoading ? 'Verifying...' : 'Verify'}
                     </button>
                 </form>
 
                 <p className="verimail-timer">
-                    Mã xác thực có hiệu lực trong {countdown} giây
+                    Verification code is valid for {countdown} seconds
                 </p>
 
                 <button
@@ -171,11 +171,11 @@ const Verimail = () => {
                     onClick={handleResendCode}
                     disabled={!canResend || isLoading}
                 >
-                    {isLoading ? 'Đang gửi...' : 'Gửi lại mã'}
+                    {isLoading ? 'Sending...' : 'Resend Code'}
                 </button>
 
                 <span className="back-link" onClick={() => navigate('/register')}>
-                    Quay lại bước trước
+                    Go back to previous step
                 </span>
             </motion.div>
 

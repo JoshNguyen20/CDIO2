@@ -6,7 +6,6 @@ import MealPlanPage from "../pages/MealPlansPage/MealPlan.jsx";
 import ForgotPassword from "../pages/AuthPage/ForgotPasswordPage.jsx";
 import VerifyOtpPage from "../pages/AuthPage/VerifyOtpPage.jsx";
 import UpdatePasswordPage from "../pages/AuthPage/UpdatePasswordPage.jsx";
-import CreatePage from "../pages/CreatePage/CreatePage.jsx";
 import LoadingPage from "../pages/CreatePage/LoadingPage.jsx";
 import WorkoutPlans from "../pages/WorkoutPlansPage/WorkoutPlan.jsx";
 import UserProfilePage from "../pages/User/UserProfilePage.jsx"
@@ -16,6 +15,7 @@ import Blog from "../pages/Blog/Blog.jsx";
 import ToolForUser from "../pages/ToolForUser/ToolForUser.jsx";
 import GeneratorPlansPage from "../pages/GeneratorPlans/GeneratorPlans.jsx";
 import OurTeam from "../pages/AboutPage/OutTeam.jsx";
+import Verimail from "../pages/Verimail.js";
 
 export const routes = [
     {   
@@ -28,28 +28,33 @@ export const routes = [
         path: '/login',
         page: LoginPage,
     },
-    {   
+    {
         id: 3,
+        path: '/verimail',
+        page: Verimail,
+    },
+    {   
+        id: 4,
         path: '/forgot-password',
         page: ForgotPassword,
     },
     {   
-        id: 4,
+        id: 5,
         path: '/forgot-password/verify-otp',
         page: VerifyOtpPage,
     },
     {   
-        id: 5,
+        id: 6,
         path: '/forgot-password/verify-otp/update-password',
         page: UpdatePasswordPage,
     },
     {   
-        id: 6,
+        id: 7,
         path: '/generator',
         page: GeneratorPlansPage,
     },
     {   
-        id: 7,
+        id: 8,
         path: '/loading',
         page: LoadingPage,
     },

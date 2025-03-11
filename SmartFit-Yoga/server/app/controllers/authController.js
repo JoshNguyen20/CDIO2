@@ -1,22 +1,54 @@
 const User = require('../models/User');
-const { sendEmail } = require('../services/emailService');
 const { generateToken } = require('../services/jwtService');
-const resetPasswordTemplate = require('../template/templateMail');
+const jwt = require('jsonwebtoken');
+const sendEmail = require('../services/emailService');
+const authEmail = require('../middlewares/auth-email');
+
 
 const register = async (req, res) => {
   try {
     const { name, email, password } = req.body;
-
-    if (await User.findOne({ email })) {
-      return res.status(400).json({ message: 'Email already exists.' });
+    
+    // Kiểm tra email đã được xác thực chưa
+    if (!req.verifiedEmail) {
+      return res.status(400).json({ 
+        err: 1,
+        msg: 'Email chưa được xác thực.' 
+      });
+    }
+    
+    // Đảm bảo email đăng ký khớp với email đã xác thực
+    if (email !== req.verifiedEmail) {
+      return res.status(400).json({ 
+        err: 1,
+        msg: 'Email đăng ký không khớp với email đã xác thực.' 
+      });
     }
 
+    // Kiểm tra email đã tồn tại chưa
+    if (await User.findOne({ email })) {
+      return res.status(400).json({ 
+        err: 1,
+        msg: 'Email đã tồn tại.' 
+      });
+    }
+
+    // Tạo user mới
     const user = new User({ name, email, password });
     await user.save();
 
-    res.status(201).json({ message: 'User registered successfully.' });
+    console.log(` Đăng ký thành công cho email: ${email}`);
+
+    res.status(201).json({ 
+      err: 0,
+      msg: 'Đăng ký thành công!' 
+    });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error(' Lỗi đăng ký:', error);
+    res.status(500).json({ 
+      err: 1,
+      msg: error.message || 'Đã xảy ra lỗi khi đăng ký.' 
+    });
   }
 };
 
@@ -44,50 +76,55 @@ const login = async (req, res) => {
   }
 };
 
-const requestPasswordReset = async (email) => {
-  const user = await User.findOne({ email });
-  if (!user) {
-    throw new Error('No user found with this email.');
+const requestPasswordReset = async (req, res) => {
+  try {
+    const { email } = req.body;
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(404).json({ message: 'No user found with this email.' });
+    }
+
+    // Tạo JWT reset token với thời hạn 1 giờ
+    const resetToken = jwt.sign(
+      { id: user._id, email: user.email },
+      process.env.JWT_RESET_SECRET,
+      { expiresIn: '1h' }
+    );
+
+    const resetLink = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
+
+    // Gửi email
+    const emailSent = await sendEmail(user.email, 'Password Reset', `Click to reset: ${resetLink}`);
+    if (!emailSent) {
+      return res.status(500).json({ message: 'Failed to send reset email. Please try again.' });
+    }
+
+    res.json({ message: 'Password reset email sent.', resetLink }); // Debug, xóa resetLink khi deploy
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
-
-  const resetToken = crypto.randomBytes(32).toString('hex');
-  const resetTokenHash = crypto
-    .createHash('sha256')
-    .update(resetToken)
-    .digest('hex');
-
-  user.resetPasswordToken = resetTokenHash;
-  user.resetPasswordExpiresAt = Date.now() + 3600 * 1000;
-  await user.save();
-
-  const resetLink = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
-
-  await sendEmail({
-    to: user.email,
-    subject: 'Password Reset Request',
-    html: resetPasswordTemplate(user.name, resetLink),
-  });
-
-  return resetLink;
 };
-const resetPassword = async (token, newPassword) => {
-  const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
+const bcrypt = require('bcrypt');
 
-  const user = await User.findOne({
-    resetPasswordToken: tokenHash,
-    resetPasswordExpiresAt: { $gt: Date.now() },
-  });
+const resetPassword = async (req, res) => {
+  try {
+    const { token, newPassword } = req.body;
 
-  if (!user) {
-    throw new Error('Invalid or expired reset token.');
+    // Giải mã token
+    const decoded = jwt.verify(token, process.env.JWT_RESET_SECRET);
+    const user = await User.findById(decoded.id);
+    if (!user) {
+      return res.status(400).json({ message: 'Invalid or expired token.' });
+    }
+
+    // Cập nhật mật khẩu
+    user.password = await bcrypt.hash(newPassword, 10);
+    await user.save();
+
+    res.json({ message: 'Password has been reset successfully.' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
-
-  user.password = await bcrypt.hash(newPassword, 10);
-  user.resetPasswordToken = undefined;
-  user.resetPasswordExpiresAt = undefined;
-  await user.save();
-
-  return user;
 };
 
 const profileUser = async (req, res) => {
